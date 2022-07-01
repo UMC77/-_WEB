@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery와 Postcodify를 로딩한다 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+    <style>
+        .header_nav {
+            border: 1px solid;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .banner_address {
+            text-align: center;
+            background-image: url("./banner.jpg");
+            background-repeat: no-repeat;
+            background-position: center top;
+            height: 250px;
+            border: 1px solid;
+        }
+
+        .banner_address input {
+            width: 300px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .banner_address-warp {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
+
+    <title>니빵내빵</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_nav">
+            <span></i>니빵내빵</span>
+            <div class="header_nav-user">
+                <span><a href="login.html">로그인 </a></span>
+                <span><a href="siginin.html">회원가입</a></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner_address">
+        <h2>"어느 곳에 계신가요?"</h2>
+        <h4>위치하신 동 이름으로 검색해주세요</h4>
+        <div class="banner_address-warp">
+            <input type="text" name="" class="postcodify_address" placeholder="서울특별시 중구 필동로 1길 30" value="" /><br />
+            <button id="postcodify_search_button">검색</button><br />
+        </div>
+    </div>
+
+    <!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
+    <script> $(function () { $("#postcodify_search_button").postcodifyPopUp(); }); </script>
+</body>
+
+
+</html>
