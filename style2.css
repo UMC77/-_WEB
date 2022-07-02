@@ -1,0 +1,261 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  a, a:active{
+      text-decoration: none;
+      color: inherit;
+      background-color: transparent;
+      cursor: pointer;
+  }
+
+.list-option {
+    padding: 10px 10px 10px 3px;
+    width: 50%;
+    float: right;
+    margin: 0 auto;
+    padding-left: 10px !important;
+}
+
+.list-option-inner {
+    position: relative;
+    max-width: 490px;
+}
+
+.list-option select {
+    float: none;
+    background: #fff;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    line-height: 1.2;
+    border: 1px solid #d9d9d9;
+    border-radius: 0;
+    height: 36px;
+    -webkit-appearance: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.list-option .arr-down {
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    z-index: 10;
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background: url(https://www.yogiyo.co.kr/mobile/image/sprite-icon.png?v=103bbdfa8d07ae1afa6c12bd84990fec7622a2f8) no-repeat -112px -249px;
+    background-size: 350px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 8px 0px 0 0;
+}
+
+/* 우리동네빵집 */
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+ 
+}
+
+.btn-tooltip.ad {
+    background: url(https://www.yogiyo.co.kr/mobile/image/ic_list_ad_d.png) no-repeat center center;
+    background-size: 34px;
+    width: 38px;
+    height: 20px;
+}
+
+.btn-tooltip {
+    background: url(../image/ic_list_info_d.png) no-repeat center center;
+    background-size: 12px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    min-width: 18px;
+    cursor: pointer;
+    border: none;
+    vertical-align: middle;
+    margin: -3px 0 0 2px;
+    padding: 0;
+}
+
+/* 입점가게들 */
+
+.restaurant-list {
+    overflow: hidden;
+}
+.category-btn, .restaurant-list {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.restaurant-list .col-sm-6, .restaurant-list-info .col-sm-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.restaurant-list .item {
+    position: relative;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    padding: 0 8px;
+    margin-bottom: 10px;
+    height: 108px;
+    box-sizing: border-box;
+}
+
+.restaurant-list table {
+    height: 108px;
+}
+table {
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+/* 가게 로고 */
+.col-sm-6 {
+    width: 50%;
+    float: left
+}
+
+.ranking-guide > p {
+    max-width: 1020px;
+    padding: 55px 10px 7px 10px;
+    margin: 0 auto;
+}
+
+.restaurant-list .logo {
+    width: 70px;
+    height: 70px;
+}
+.restaurants-info ul {
+    padding-top: 10px;
+    padding-left: 0;
+    margin-top: 5px;
+    padding-left: 0;
+}
+.restaurant-list ul {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.restaurant-content .logo, .restaurant-list .logo {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #d9d9d9;
+    background-size: cover;
+    /* background-image: url(https://www.yogiyo.co.kr/mobile/image/default_restaurant_logo.png); */
+}
+
+/* 가게 info */
+.restaurants-info {
+    padding-left: 10px;
+}
+
+.restaurants-info .restaurant-name {
+    font-size: 120%;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.restaurant-name {
+    padding-top: 3px;
+}
+
+.restaurant-list .stars {
+    font-size: 12px;
+}
+.review_num:before {
+    content: "|";
+    color: #d9d9d9;
+}
+
+.ico-star1 {
+    color: #ffa800;
+}
+
+.restaurant-list .stars {
+    font-size: 12px;
+}
+
+
+li.full-w {
+    width: 100%;
+    margin: 0;
+    padding: 2px 0;
+    margin-top: 3px;
+}
+
+.ng-hide:not(.ng-hide-animate) {
+    display: none !important;
+}
+
+.coupon-style1 {
+    color: #FFF !important;
+    background: #fa0050;
+    border-color: #fa0050;
+}
+.coupon-base {
+    height: 16px;
+    font-size: 10px;
+    border: 1px solid #fa0050;
+    color: #fa0050 !important;
+    padding: 1px 4px;
+    box-sizing: border-box;
+}
+
+.delivery-time {
+    position: absolute;
+    bottom: 12px;
+    right: 10px;
+    color: #999 !important;
+    font-size: 11px !important;
+}

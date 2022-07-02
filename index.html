@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery와 Postcodify를 로딩한다 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="//d1p7wdleee1q2z.cloudfront.net/post/search.min.js"></script>
+    <style>
+        .header_nav {
+            border: 1px solid;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .header_nav span {
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .header_nav button {
+            padding: 10px 10px;
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .banner_address {
+            padding: 10px 0px;
+            text-align: center;
+            background-color: #323232;
+            height: 230px;
+            justify-content: center;
+            color: white;
+        }
+
+        .banner_address h2 {
+            margin: 10px 10px;
+        }
+
+        .banner_address input {
+            margin-top: 10px;
+            width: 300px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .banner_address button {
+            margin-top: 10px;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+
+        .banner_address-warp {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <title>니빵내빵</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_nav">
+            <span></i>니빵내빵</span>
+            <div class="header_nav-user">
+                <span><a href="login.html">로그인 </a></span>
+                <button>주문표</button><br />
+            </div>
+        </div>
+    </header>
+
+    <div class="banner_address">
+        <h2>"어느 곳에 계신가요?"</h2>
+        <h4>위치하신 동 이름으로 검색해주세요</h4>
+        <div class="banner_address-warp">
+            <input type="text" name="" class="postcodify_address" placeholder="서울특별시 중구 필동로 1길 30" value="" /><br />
+            <button id="postcodify_search_button">검색</button><br />
+        </div>
+    </div>
+
+
+    <div class="category-list" ng-hide="$location.path() != &quot;/&quot;">
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" onclick="window.open('index2.html')">
+                    <div onclick="window.location.href = 'index2.html'" class="category-title">전체보기</div>
+                    <img class="img" src="https://www.yogiyo.co.kr/mobile/image/category-01.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" onclick="window.open('index2.html')">
+                    <div class="category-title">비건빵</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-onedish.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" onclick="window.open('index2.html')">
+                    <div class="category-title">케이크</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" onclick="window.open('index2.html')">
+                    <div class="category-title">샌드위치</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('치킨')">
+                    <div class="category-title">크루아상</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('중식')">
+                    <div class="category-title">통밀빵</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('한식')">
+                    <div class="category-title">도넛</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('일식돈까스')">
+                    <div class="category-title">파이</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('족발보쌈')">
+                    <div class="category-title">와플</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('야식')">
+                    <div class="category-title">베이글</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('분식')">
+                    <div class="category-title">페스츄리</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('카페디저트')">
+                    <div class="category-title">쿠키</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('편의점')">
+                    <div class="category-title">마카롱</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('편의점')">
+                    <div class="category-title">소금빵</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('편의점')">
+                    <div class="category-title">스콘</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-3">
+                <a href="" class="thumbnail" ng-click="select_home_category('편의점')">
+                    <div class="category-title">고로케</div>
+                    <img src="https://www.yogiyo.co.kr/mobile/image/category-10.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단바 -->
+    <div class="footer">
+        <div class="footer-menu">
+            <ul>
+                <li class="mb" ng-show="!is_mobile_device">
+                    <a href="#/policy/">이용약관</a>
+                </li>
+                <li class="mb privacy-txt" ng-show="!is_mobile_device">
+                    <a href="#/privacy/">개인정보처리방침</a>
+                </li>
+                <li class="mb cscenter" ng-show="!is_mobile_device">
+                    <a href="#/point_policy/">포인트정책</a>
+                </li>
+                <li class="mb">
+                    <a href="https://www.wesang.com/" rel="noopener noreferrer" target="_blank">회사소개</a>
+                </li>
+                <li>
+                    <a href="https://www.yogiyo.co.kr/owner/login/" target="_blank">광고문의</a>
+                </li>
+                <li class="mb lst">
+                    <a href="https://owner.yogiyo.co.kr/owner/join/request/">입점문의</a>
+                </li>
+                <li class="mb down_app ng-hide" ng-show="is_mobile_device">
+                    <a href="" ng-click="download_app('footer')" class="app">APP설치</a>
+                </li>
+                <li class="mb notice"><a href="#/notice/">공지사항</a>
+                </li>
+                <li class="sns-link">
+                    <a href="https://www.facebook.com/Yogiyokorea/" class="facebook" rel="noopener noreferrer"
+                        target="_blank">
+                        <span>
+
+                        </span>페이스북</a>
+                    <a href="https://blog.naver.com/rgpkorea" class="blog" rel="noopener noreferrer" target="_blank">
+                        <span></span>블로그</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<!-- "검색" 단추를 누르면 팝업 레이어가 열리도록 설정한다 -->
+<script> $(function () { $("#postcodify_search_button").postcodifyPopUp(); }); </script>
+<!-- 카테고리 -->
+
+</html>
