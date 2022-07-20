@@ -46,7 +46,7 @@ a, a:active {
     right: auto;
     bottom: 0;
     overflow: auto;
-    background-color: blueviolet;
+/*     background-color: blueviolet; */
     height: auto;
     /* align-content: center; */
 }
@@ -56,7 +56,7 @@ a, a:active {
     position: absolute;
     width: 500px;
     height: 140px;
-    background-color: blue;
+/*     background-color: blue; */
 }
 
 .center-top>li.top-info {
@@ -95,5 +95,5 @@ a, a:active {
     display: block;
     width: 500px;
     height: 385px;
-    background-color: green;
+/*     background-color: green; */
 }
