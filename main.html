@@ -1,0 +1,73 @@
+<!-- 메인화면 html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>니빵내빵</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!-- 상단 헤더 -->
+
+    <!-- <header>
+        <div class="header_nav">
+            <span></i>니빵내빵</span>
+            <div class="header_nav-user">
+                <span><a href="login.html">로그인 </a></span>
+                <span><a href="siginin.html">회원가입</a></span>
+            </div>
+        </div>
+    </header> -->
+
+    <div class="own-container">
+        <div class="own-main">
+        
+    <!-- 네모칸들-- 예약관리, 가게 정보 관리, 메뉴관리, 리뷰관리 -->
+            <ul class="nav clearfix">
+                <li class="n1"><a href="#" style="cursor: pointer">예약관리</a></li>
+                <!-- onclick="redirectLogin('/owner/reservation/')" -->
+                <li class="n2"><a href="#" style="cursor: pointer">가게 정보 관리</a></li>
+                
+                <li class="n3"><a href="#" style="cursor: pointer">메뉴 관리</a></li>
+                <li class="n4"><a href="#" style="cursor: pointer">리뷰관리</a></li>
+            </ul>
+
+
+            <!-- 사장님 배너 -->
+            <div class="own-mid">
+                <a href="#" style="cursor: pointer">
+                    <!-- later 이미지첨가 -->
+                    사장님 사이트에서
+                </a>
+            </div>
+
+            <!-- 로그인 -->
+            <div class="own-login">
+                <li class="text-login"><a href="#" style="cursor: pointer">로그인</a></li>
+                <li class="border-login"><hr size="2" width="324.88px" color="black" ></li>
+                <!-- 글자수제한 -> 10개 -->
+                    <input class="id-box" type="text" maxlength = "10" placeholder=" 아이디"/>
+                    <input class="password-box" type="text" maxlength = "10" placeholder=" 비밀번호"/>
+                    <button class="login-btn">로그인</button>
+
+                    <button class="login-find-btn">아이디/비밀번호 찾기</button>
+
+                <li class="border2-login"><hr size="2" width="400px" color="black" ></li>
+
+                <!-- 회원가입 -->
+                <div class="own-signup">
+                    <button class="signup-btn">회원가입</button>
+                </div>
+
+            </div>
+
+        
+
+        </div>
+        
+    </div>
+</body>
+</html>
