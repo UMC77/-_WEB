@@ -22,7 +22,7 @@ a, a:active {
 /* 헤더 */
 .own-header {
     height: 75px;
-    border-bottom: 1px solid #000000;
+    /* border-bottom: 1px solid #000000; */
 }
 
 .own-header>div {
