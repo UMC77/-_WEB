@@ -1,6 +1,6 @@
 @import "reset.css";
 @import "main.css";
-@import "reserve.css";
+@import "handleReserve.css";
 @import "variables.css";
 
 * {

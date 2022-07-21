@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>예약 관리-접수 완료</title>
+    <style>
+        .complete_res {
+            color: #ffffff;
+        }
+
+        .reserve_menu span:first-child {
+            margin-top: 20px;
+            color: var(--main);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="warp">
+
+        <div class="reserve_menu">
+            <span>예약 관리</span>
+            <span>가게 정보 관리</span>
+            <span>메뉴 관리</span>
+            <span>리뷰 관리</span>
+
+        </div>
+
+        <div class="reserve">
+            <button class="reserve_btn">주문 예약</button>
+            <button class="reserve_btn">당일 예약</button>
+            <button class="reserve_btn">예약 불가</button>
+            <i class="fa-regular fa-circle-question"></i>
+
+            <div class="reserve_box">
+                <div class="reserve_column wait_res">
+                    <span>접수 대기</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column complete_res">
+                    <span>접수 완료</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column cancel_res">
+                    <span>취소 주문</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column all_res">
+                    <span>전체 내역</span>
+                    <span>0개</span>
+                </div>
+
+            </div>
+
+            <div class="list_header">
+                <div class="list_column">
+                    <span>예약 시간/예약자명</span>
+                </div>
+                <div class="list_column">
+                    <span>가격</span>
+                </div>
+                <div class="list_column">
+                    <span>픽업 예정 시간</span>
+                </div>
+                <div class="list_column list_column-menu">
+                    <span>메뉴</span>
+                </div>
+
+
+            </div>
+            <!-- 주문이 없을 경우         
+        <div class="reserve_list">
+            <span>새로운 주문을 기다리고 있어요.</span>
+        </div> -->
+
+            <div class="popup" style="display: none">팝업창</div>
+            <div class="reserve_list">
+                <div class="list_column">
+                    <span class="size16">2022.07.15 12:44:15</span>
+                    <span class="size16 weight550">김니빵</span>
+                </div>
+                <div class="list_column">
+                    <span class="list_cost size16 weight550">12,000원</span>
+                </div>
+                <div class="list_column">
+                    <span class="size14">2022.07.15 15:00</span>
+                </div>
+                <div class="list_column list_column-menu">
+                    <span class="size14">[메뉴 3개]</span>
+                    <span class="size14">소금빵x1, 크림치즈 베이글x1, 어니언 베이글x1</span>
+                </div>
+            </div>
+            <div class="reserve_list">
+                <div class="list_column">
+                    <span class="size16">2022.07.15 12:44:15</span>
+                    <span class="size16 weight550">김니빵</span>
+                </div>
+                <div class="list_column">
+                    <span class="list_cost size16 weight550">12,000원</span>
+                </div>
+                <div class="list_column">
+                    <span class="size14">2022.07.15 15:00</span>
+                </div>
+                <div class="list_column list_column-menu">
+                    <span class="size14">[메뉴 3개]</span>
+                    <span class="size14">소금빵x1, 크림치즈 베이글x1, 어니언 베이글x1</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
