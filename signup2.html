@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>니빵내빵</title>
     <link rel="stylesheet" href="css/style.css">
+   <script src="js/allSelect.js"></script>
 </head>
 
 <body>
@@ -40,18 +41,65 @@
                     <a href="#" style="cursor: pointer">매장 전화번호<span style="color:#FA6660">*</span></a>
                     <input class="a2-box" type="text" placeholder="  숫자만 입력해주세요" />
                 </div>
-                <div class="a3"><a href="#" style="cursor: pointer">주소 검색<span style="color:#FA6660">*</span></a>
-                    <input class="a3-box" type="text" placeholder="  비밀번호를 입력해주세요" />
+                <div class="a3">
+                    <a href="#" style="cursor: pointer">주소 검색
+                        <span style="color:#FA6660">*</span>
+                    </a>
+                    <button class="find" >
+                        <!-- 원래는 돋보기 이미지자리 -->
+
+                    </button>
+                    <input class="a3-box" type="text" placeholder="      주소 검색" />
                 </div>
                 <div class="a4"><a href="#" style="cursor: pointer">상세주소<span style="color:#FA6660">*</span></a>
                     <input class="a4-box" type="text" placeholder="  상세주소를 입력해주세요" />
                 </div>
-                <div class="a5"><a href="#" style="cursor: pointer">매장 위치 상세설명<span style="color:#FA6660">*</span></a>
+                <div class="a5"><a href="#" style="cursor: pointer">매장 위치 상세설명</a>
                     <input class="a5-box" type="text" placeholder="  매장 위치를 상세히 입력해주세요" />
                 </div>
 
-                <div class="next">
-                    <button class="next-btn">다음</button>
+                <div class="a11">
+                    <span class="form-checkbox form-checkbox--rounded">
+                        <input type="checkbox" onclick='selectAll(this)' name="agreeAll" class="form-checkbox-input" id="agreeAll">
+                        <label class="form-checkbox-label" for="agreeAll">
+                            <i class="form-checkbox-icon" type="checkBox">
+                            </i>
+                            <span class="form-checkbox-text">모든 이용약관에 동의합니다.</span>
+                        </label>
+                    </span>
+                </div>
+                <div class="a22">
+                        <span class="form-checkbox form-checkbox--rounded">
+                            <input type="checkbox" class="form-checkbox-input" id="니빵내빵ServiceAgree">
+                            <label class="form-checkbox-label" for="니빵내빵ServiceAgree">
+                                <i class="form-checkbox-icon" type="checkbox"></i>
+                                <span class="form-checkbox-text" style="font-weight: 400; font-size: 16px;">
+                                    <a href="/merchant/app/tnc" target="_blank">
+                                        <span style="font-weight: 550;">[필수]</span> 니빵내빵 서비스 이용약관</a>
+                                    </span></label></span>
+                </div>
+                <div class="a33">
+                    <span class="form-checkbox form-checkbox--rounded">
+                        <input type="checkbox" class="form-checkbox-input" id="사이트Agree">
+                        <label class="form-checkbox-label" for="사이트Agree">
+                            <i class="form-checkbox-icon"></i>
+                            <span class="form-checkbox-text" style="font-weight: 400; font-size: 16px;">
+                                <a href="/merchant/app/tnc" target="_blank">
+                                    <span style="font-weight: 550;">[필수]</span> 사이트 이용 약관 동의</a>
+                                </span></label></span>
+                </div>
+                <div class="a44"><span class="form-checkbox form-checkbox--rounded">
+                    <input type="checkbox" class="form-checkbox-input" id="개인정보Agree">
+                    <label class="form-checkbox-label" for="개인정보Agree">
+                        <i class="form-checkbox-icon"></i>
+                        <span class="form-checkbox-text" style="font-weight: 400; font-size: 16px;">
+                            <a href="/merchant/app/tnc" target="_blank">
+                                <span style="font-weight: 550;">[필수]</span> 개인정보 수집 및 이용 동의</a>
+                            </span></label></span>
+                </div>
+
+                <div class="signup">
+                    <button class="signup-btn">회원 가입 하기</button>
                     <!-- onclick="location.href='main.html'" -->
                 </div>
         </div>
