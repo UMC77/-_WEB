@@ -2,6 +2,7 @@
 @import "main.css";
 @import "handleReserve.css";
 @import "variables.css";
+@import "signup.css";
 
 * {
   font-family: "Noto Sans";

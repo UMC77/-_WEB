@@ -80,12 +80,15 @@
             <span>새로운 주문을 기다리고 있어요.</span>
         </div> -->
 
-            <div class="popup" style="display: none">팝업창</div>
             <div class="reserve_list">
-                <div class="list_column">
-                    <span class="size16">2022.07.15 12:44:15</span>
-                    <span class="size16 weight550">김니빵</span>
-                </div>
+                <button type="button" id="modal_btn">
+                    <!--주문 접수 버튼-->
+                    <div class="list_column">
+                        <span class="size16">2022.07.15 12:44:15</span>
+                        <span class="size16 weight550">김니빵</span>
+                    </div>
+                </button>
+
                 <div class="list_column">
                     <span class="list_cost size16 weight550">12,000원</span>
                 </div>
@@ -116,9 +119,41 @@
 
         </div>
 
+        <!--주문 접수 팝업창-->
+        <div class="black_bg"></div>
+
+        <div class="modal_wrap">
+            <div>
+                김니빵
+            </div>
+            <div class="modal_close">
+                <a href="#">주문 접수</a>
+            </div>
+
+        </div>
+
+
     </div>
+    <script>
+        window.onload = function () {
+            function onClick() {
+                document.querySelector('.modal_wrap').style.display = 'block';
+                document.querySelector('.black_bg').style.display = 'block';
+            }
+            function offClick() {
+                document.querySelector('.modal_wrap').style.display = 'none';
+                document.querySelector('.black_bg').style.display = 'none';
+            }
+
+            document.getElementById('modal_btn').addEventListener('click', onClick);
+            document.querySelector('.modal_close').addEventListener('click', offClick);
+        };
+    </script>
+
+
 
     <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
 </body>
+
 
 </html>
