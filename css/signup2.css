@@ -1,42 +1,42 @@
 /* 회원가입2 css */
 
-*{
-    /* font-family: 'Roboto', sans-serif; */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  /* font-family: 'Roboto', sans-serif; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-
-a, a:active {
-    text-decoration: none;
-    color: inherit;
+a,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* 헤더 */
 .own-header {
-    height: 75px;
-    /* border-bottom: 1px solid #DDDDDD; */
+  height: 75px;
+  /* border-bottom: 1px solid #DDDDDD; */
 }
 
-.own-header>div {
-    position: relative;
-    min-width: 960px;
-    margin: 0 auto;
-    padding: 26px 20px 25px 20px;
+.own-header > div {
+  position: relative;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 26px 20px 25px 20px;
 }
 
 .form {
-    margin-top: 40px;
-    text-align: center;
-    width: 100%;
-    height: 100%;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* 센터정렬 */
@@ -58,19 +58,19 @@ a, a:active {
     height: 160px;
 }
 
-.center-top>li.top-info {
-    display: block;
-    width: 75px;
-    height: 27px;
-    margin-left: 100px;   
-    border: 1px solid #F4AA41;
-    background-color: #F4AA41;
-    border-radius: 53px;
-    font-size: 12px;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-top: 5px;
+.center-top > li.top-info {
+  display: block;
+  width: 75px;
+  height: 27px;
+  margin-left: 100px;
+  border: 1px solid #f4aa41;
+  background-color: #f4aa41;
+  border-radius: 53px;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding-top: 5px;
 }
 
 .center-top>li.top-tra {
@@ -82,10 +82,9 @@ a, a:active {
     font-weight: 100;
 }
 
-.center-top>li.top-tra .top-tt{
-    font-weight: 400;
+.center-top > li.top-tra .top-tt {
+  font-weight: 400;
 }
-
 
 /* 센터 middle part */
 .center-form .center-middle {
@@ -98,66 +97,66 @@ a, a:active {
 }
 
 .center-middle .a1 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
 }
-.center-middle .a1>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
+.center-middle .a1 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 .center-middle .a1 .a1-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
 
 .center-middle .a2 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
-    margin-top: 17px;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  margin-top: 17px;
 }
 
-.center-middle .a2>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
+.center-middle .a2 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 .center-middle .a2 .a2-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
 
 .center-middle .a3 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
-    margin-top: 17px;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  margin-top: 17px;
 }
 
-.center-middle .a3>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
+.center-middle .a3 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 /* 버튼 */
@@ -172,92 +171,89 @@ a, a:active {
 
 
 .center-middle .a3 .a3-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
 
 .center-middle .a4 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
-    margin-top: 17px;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  margin-top: 17px;
 }
 
-.center-middle .a4>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
-
+.center-middle .a4 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 .center-middle .a4 .a4-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
 
 .center-middle .a5 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
-    margin-top: 17px;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  margin-top: 17px;
 }
 
-.center-middle .a5>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
+.center-middle .a5 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 .center-middle .a5 .a5-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
 
 .center-middle .a6 {
-    display: inline-block;
-    height: 55px;
-    width: 100%;
-    margin-top: 17px;
+  display: inline-block;
+  height: 55px;
+  width: 100%;
+  margin-top: 17px;
 }
 
-.center-middle .a6>a {
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    color: #333333;
-    margin-top: 15px;
+.center-middle .a6 > a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-top: 15px;
 }
 
 .center-middle .a6 .a6-box {
-    border: 1px solid #C0C0C0;
-    width: 340px;
-    height: 50px;
-    float: right;
-    margin-bottom: 17px;
-    background: #FDFDFD;
-    border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 340px;
+  height: 50px;
+  float: right;
+  margin-bottom: 17px;
+  background: #fdfdfd;
+  border-radius: 3px;
 }
-
-
 
 /* 이용약관 */
 
@@ -497,7 +493,7 @@ input#개인정보Agree:checked + label>i{
 
 /* 회원 가입 버튼 */
 
-.center-middle .sign>button{
+.center-middle .signup>button{
     width: 420px;
     height: 55px;
     border-radius: 3px;
@@ -510,7 +506,7 @@ input#개인정보Agree:checked + label>i{
     margin-top: 46px;
 }
 
-.center-middle .sign>button:active{
+.center-middle .signup>button:active{
     background-color: #FFFFFF;
     color: #F4AA41;
 }

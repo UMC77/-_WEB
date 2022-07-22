@@ -34,9 +34,9 @@
         </div>
 
         <div class="reserve">
+            <button class="reserve_btn">오늘 예약</button>
             <button class="reserve_btn">주문 예약</button>
-            <button class="reserve_btn">당일 예약</button>
-            <button class="reserve_btn">예약 불가</button>
+            <button class="reserve_btn">매장 판매</button>
             <i class="fa-regular fa-circle-question"></i>
 
             <div class="reserve_box">
@@ -80,14 +80,17 @@
             <span>새로운 주문을 기다리고 있어요.</span>
         </div> -->
 
-            <div class="popup" style="display: none">팝업창</div>
             <div class="reserve_list">
+                <button type="button" id="modal_btn">
+                    <!--주문 접수 버튼-->
+                    <div class="list_column">
+                        <span class="size16">2022.07.15 12:44:15</span>
+                        <span class="size16 weight550">김니빵</span>
+                    </div>
+                </button>
+
                 <div class="list_column">
-                    <span class="size16">2022.07.15 12:44:15</span>
-                    <span class="size16 weight550">김니빵</span>
-                </div>
-                <div class="list_column">
-                    <span class="list_cost size16 weight550">12,000원</span>
+                    <span class="point_color size16 weight550">12,000원</span>
                 </div>
                 <div class="list_column">
                     <span class="size14">2022.07.15 15:00</span>
@@ -103,7 +106,7 @@
                     <span class="size16 weight550">김니빵</span>
                 </div>
                 <div class="list_column">
-                    <span class="list_cost size16 weight550">12,000원</span>
+                    <span class="point_color size16 weight550">12,000원</span>
                 </div>
                 <div class="list_column">
                     <span class="size14">2022.07.15 15:00</span>
@@ -116,9 +119,192 @@
 
         </div>
 
+        <!--주문 접수 팝업창-->
+        <div class="black_bg"></div>
+
+        <!-- 주문 상세 팝업창 -->
+        <div class=" modal_wrap">
+            <div class="modal_detail_nav">
+                <span>상세 주문 내역</span>
+                <div class="modal_close">
+                    <a href="#"><i class="fa-thin fa-x  fa-lg"></i></a>
+                </div>
+            </div>
+            <div class="modal_detail_cos">
+                <span>김니빵</span>
+                <span>2022.07.15 12:44:15 </span>
+            </div>
+
+            <div class="div_detail_menu">
+                <div class="detail_column">
+                    <span>
+                        메뉴
+                    </span>
+                </div>
+                <div class="detail_column">
+                    <span>
+                        수량
+                    </span>
+                </div>
+                <div class="detail_column">
+                    <span>
+                        금액
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+            <div class="div_detail">
+                <div class="menu_column">
+                    <span>
+                        크림치즈 베이글
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+
+
+            <div class="div_detail_total">
+                <div class="menu_column">
+                    <span>
+                        합계
+                    </span>
+                </div>
+                <div class="menu_column">
+                    <span>
+                        1
+                    </span>
+                </div>
+                <div class="menu_column point_color">
+                    <span>
+                        3500원
+                    </span>
+                </div>
+            </div>
+
+            <div class="close_wrap">
+                <div class="modal_refuse">
+                    <a href="#">주문 거절</a>
+                </div>
+                <button type="button" id="modal_btn">
+                    <div class="modal_take">
+                        <a href="#">주문 수락</a>
+                    </div>
+                </button>
+
+
+            </div>
+
+
+        </div>
+
+        <!-- 주문 접수 완료 안내 팝업창 -->
+        <div class="modal_alert">
+            <span>주문이 수락되었습니다.</span>
+            <div class="modal_close2">
+                <a href="#">확인</a>
+            </div>
+        </div>
     </div>
 
+
     <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+    <script src="js/reserve.js"></script>
 </body>
+
 
 </html>
