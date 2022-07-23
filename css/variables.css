@@ -1,6 +1,7 @@
 :root {
-  --text: #333333;
-  --main: #f4aa41;
+  --text: #282828;
+  --headermain: #ffa605;
+  --main: #ff9900;
   --point: #fa6660;
   --border: #c0c0c0;
   --inside: #fdfdfd;

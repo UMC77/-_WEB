@@ -19,5 +19,6 @@ window.onload = function () {
   document.getElementById("modal_btn").addEventListener("click", onClick);
   document.querySelector(".modal_take").addEventListener("click", takeOrder);
   document.querySelector(".modal_refuse").addEventListener("click", offClick);
+  document.querySelector(".modal_close").addEventListener("click", offClick);
   document.querySelector(".modal_close2").addEventListener("click", offClick);
 };
