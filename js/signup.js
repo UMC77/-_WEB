@@ -63,3 +63,6 @@ userPw.onkeyup=function(){
 }
 
 //버튼 이동
+function newPage()  {
+  window.location.href = 'http://127.0.0.1:5502/signup2.html'
+}
