@@ -6,4 +6,3 @@ function selectAll(selectAll)  {
       checkbox.checked = selectAll.checked
     })
   }
-

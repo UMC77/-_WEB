@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>니빵내빵</title>
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
@@ -31,33 +30,56 @@
                 <li class="top-tra"><a href="#"><span class="top-tt" style="color: black">니빵내빵 회원</span>이 되어보세요.</a>
                 </li>
             </div>
-            
+
             <div class="center-middle">
-                <div class="a1">
-                    <a href="#" style="cursor: pointer">사업자등록번호<span style="color:#FA6660">*</span></a>
-                    <input class="a1-box" type="text" placeholder="  상호를 정확히 입력해주세요" />
+                <div class="aa1">
+                    <fieldset>
+                        <label style="padding-top: 10px;">사업자등록번호<span style="color:#FA6660">*</span></label>
+                        <input type="text" id="ownNum" class="aa1-box" placeholder="사업자등록번호를 정확히 입력해주세요">
+        
+                      </fieldset>
                 </div>
-                <div class="a2">
-                    <a href="#" id="user_id" style="cursor: pointer">아이디<span style="color:#FA6660">*</span></a>
-                    <input class="a2-box" type="text" placeholder="  아이디를 입력해주세요" />
+                <div class="aa2">
+                    <fieldset>
+                        <label>아이디<span style="color:#FA6660">*</span></label>
+                        <input id="userId" class="aa2-box" type="text" placeholder="아이디를 입력해주세요">
+                        <div class="success-message hide" style="font-size: 10px; color: red;">사용할 수 있는 아이디입니다</div>
+                        <div class="failure-message hide" style="font-size: 10px; color: red;">아이디는 네 글자 이상이어야 합니다</div>
+                      </fieldset>
                 </div>
-                <div class="a3"><a href="#" id="user_pw" style="cursor: pointer">비밀번호<span style="color:#FA6660">*</span></a>
-                    <input class="a3-box" type="text" placeholder="  비밀번호를 입력해주세요" />
+                <div class="aa3">
+                    <fieldset>
+                        <label>비밀번호<span style="color:#FA6660">*</span></label>
+                        <input id="userPw" class="aa3-box" type="password" placeholder="비밀번호를 입력해주세요" >
+                        <div class="pw-success-message hide" style="font-size: 10px; color: red;">사용할 수 있는 비밀번호입니다</div>
+                        <div class="pw-failure-message hide" style="font-size: 10px; color: red;">비밀번호는 8 글자 이상이어야 합니다</div>
+                      </fieldset>
                 </div>
-                <div class="a4"><a href="#" style="cursor: pointer">비밀번호 확인<span style="color:#FA6660">*</span></a>
-                    <input class="a4-box" type="text" placeholder="  비밀번호를 한번 더 입력해주세요" />
+                <div class="aa4">
+                    <fieldset>
+                        <label>비밀번호 확인<span style="color:#FA6660">*</span></label>
+                        <input id="pwTest" class="aa4-box" type="password" placeholder="비밀번호를 한번 더 입력해주세요">
+                        <div class="mismatch-message hide" style="font-size: 10px; color: red;">비밀번호가 일치하지 않습니다</div>
+                      </fieldset>
                 </div>
-                <div class="a5"><a href="#" style="cursor: pointer">이름<span style="color:#FA6660">*</span></a>
-                    <input class="a5-box" type="text" placeholder="  이름를 입력해주세요" />
+                <div class="aa5">
+                    <fieldset>
+                        <label>이름<span style="color:#FA6660">*</span></label>
+                        <input id="name" class="aa5-box" type="text" placeholder="이름를 입력해주세요">
+                      </fieldset>
                 </div>
-                <div class="a6"><a href="#" style="cursor: pointer">휴대폰 번호<span style="color:#FA6660">*</span></a>
-                    <input class="a6-box" type="tel" placeholder="  숫자만 입력해주세요" />
+                <div class="aa6">
+                    <fieldset>
+                        <label>휴대폰 번호<span style="color:#FA6660">*</span></label>
+                        <input id="phoneNum" class="aa6-box" type="tel" placeholder="숫자만 입력해주세요">
+                      </fieldset>
                 </div>
 
                 <div class="next">
-                    <button id="btn_login" class="next-btn">다음</button>
-                    <!-- onclick="location.href='main.html'" -->
+                    <button type="button" id="btn_next" class="next-btn">다음</button>
                 </div>
+
+                <script src="js/signup.js"></script>
         </div>
 
     </div>
