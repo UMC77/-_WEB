@@ -146,6 +146,7 @@ a:active {
   margin-bottom: 17px;
   background: #fdfdfd;
   border-radius: 3px;
+  padding-left: 10px;
 }
 
 .center-middle .a3 {
@@ -243,6 +244,7 @@ a:active {
   margin-bottom: 17px;
   background: #fdfdfd;
   border-radius: 3px;
+  padding-left: 10px;
 }
 
 .center-middle .a5 {
@@ -268,7 +270,9 @@ a:active {
   margin-bottom: 17px;
   background: #fdfdfd;
   border-radius: 3px;
+  padding-left: 10px;
 }
+
 .center-middle .a6 {
   display: inline-block;
   height: 55px;

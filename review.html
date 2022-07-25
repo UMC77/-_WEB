@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>리뷰관리</title>
+    <script src="js/review.js"></script>
+    <style>
+        .complete_res {
+            color: #ffffff;
+        }
+
+        .reserve_menu span:first-child {
+            margin-top: 20px;
+        }
+
+        .reserve_menu span:last-child {
+            color: var(--main);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="warp">
+
+        <div class="review_menu">
+            <span>예약 관리</span>
+            <span>가게 정보 관리</span>
+            <span>메뉴 관리</span>
+            <span>리뷰 관리</span>
+
+        </div>
+
+        <div class="review">
+            <div class="review_box">
+                <div class="review_all">
+                    <span class="all">전체</span>
+                    <span class="count">0개</span>
+                </div>
+                <div class="review_an">
+                    <span class="ans">답변</span>
+                    <span class="count_ans">0개</span>
+                </div>
+                <div class="review_un">
+                    <span class="un_ans">미답변</span>
+                    <span class="un_ans_count">0개</span>
+                </div>
+
+            </div>
+
+            <div class="list_header1">
+                <div class="list_column1">
+                    <span>리뷰 작성일</span>
+                </div>
+                <div class="list_column1" id="content">
+                    <span >리뷰 내용</span>
+                </div>
+            </div>
+
+            <div class="review_list">
+                <div class="list_column2">
+                    <span class="review_id">아이디</span>
+                    <span class="review_day">리뷰 작성 날짜</span>
+                    <div class="star-ratings">
+                        <div 
+                        class="star-ratings-fill space-x-2 text-lg"
+                        :style="{ width: ratingToPercent + '%' }"
+                        >
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <div class="star-ratings-base space-x-2 text-lg">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list_column3">
+                    <span class="order_menu">주문 메뉴 | </span>
+                    <span class="order_menu_name">주문 메뉴명</span>
+                    <span class="order_num">주문 번호</span>
+                    <span class="order_number">주문번호</span>
+                    <span class="review_pic"></span>
+                    <span class="review_content">리뷰내용</span>
+                </div>
+
+                <div class="list_column4">
+                    <button class="own_ans" onclick="popup()">사장님 댓글 등록하기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        
