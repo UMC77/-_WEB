@@ -66,6 +66,7 @@
                     <fieldset>
                         <label>이름<span style="color:#FA6660">*</span></label>
                         <input id="name" class="aa5-box" type="text" placeholder="이름를 입력해주세요">
+                        <div id="nameError" class="error"></div>
                       </fieldset>
                 </div>
                 <div class="aa6">
@@ -76,7 +77,7 @@
                 </div>
 
                 <div class="next">
-                    <button type="button" id="btn_next" class="next-btn"   onclick='newPage()'>다음</button>
+                    <button type="button" id="btn_next" class="next-btn" onclick='check()'>다음</button>
                 </div>
 
                 <script src="js/signup.js"></script>

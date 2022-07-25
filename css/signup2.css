@@ -165,15 +165,16 @@ a:active {
 
 /* 버튼 */
 .a3 .find {
-    position: absolute;
+    position: relative;
     width: 30px;
     height: 20px;
     background-color: #F4AA41;
-    margin-left: 165px;
+    margin-left: 90px;
+    top: 6px;
 }
 
 .center-middle .a3 .xx {
-  width: 10px;
+  width: 50px;
   display: none;
 }
 
@@ -183,18 +184,19 @@ a:active {
   height: 50px;
   float: right;
   position: relative;
-  margin-bottom: 17px;
   background: #fdfdfd;
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 40px;
+  bottom: 30px;
+  z-index: -1;
 }
 
 .center-middle .a3 > a.bb {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  padding-top: 30px;
+  padding-top: 25px;
   position: absolute;
 }
 
@@ -211,9 +213,10 @@ a:active {
   margin-bottom: 17px;
   background: #fdfdfd;
   border-radius: 3px;
-  margin-top: 7px;
   box-sizing: border-box;
   padding-left: 10px;
+  position: relative;
+  bottom:8px;
 }
 
 
@@ -369,14 +372,6 @@ input {
 input[type="checkbox"]:checked + label>i{
 	background-color: #F4AA41;
 }
-
-/* input#니빵내빵ServiceAgree:checked + label>i{
-	background-color: #F4AA41;
-}
-
-input#개인정보Agree:checked + label>i{
-	background-color: #F4AA41;
-} */
 
 .form-checkbox-icon:after, .form-checkbox-icon:before {
     content: "";

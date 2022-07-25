@@ -8,7 +8,7 @@ let pwMsg = document.querySelector('.pw-success-message')
 let NpwMsg = document.querySelector('.pw-failure-message')
 const userPw =  document.querySelector('#userPw'); //비밀번호
 const pwTest = document.querySelector('#pwTest'); //비밀번호 확인
-const name =  document.querySelector('#name'); //이름
+let name =  document.querySelector('#name'); //이름
 const phoneNum = document.querySelector('#phoneNum'); //휴대폰번호
 const Nextbtn=document.querySelector('#btn_next')
 
@@ -63,6 +63,44 @@ userPw.onkeyup=function(){
 }
 
 //버튼 이동
-function newPage()  {
-  window.location.href = 'http://127.0.0.1:5502/signup2.html'
+function check() {
+  let name =  document.querySelector('#name'); //이름
+  let ownNum = document.querySelector('#ownNum') //사업자등록번호
+  let userId = document.querySelector('#userId') //아이디
+
+  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false){
+    alert("필수란을 채워주세요.")
+  }
+  else{
+    window.location.href = 'http://127.0.0.1:5502/signup2.html'
+  }
+}
+
+function signup(){
+  let storeName =  document.querySelector('#storeName'); //상호
+  let storeNum = document.querySelector('#storeNum') //매장 전화번호
+  let address = document.querySelector('#address') //주소
+  let detailAddress = document.querySelector('#detailAddress') //주소
+  // 서버형성되면 주소 추가||address.value==""||detailAddress==""
+
+  const aBtn= document.querySelector('#니빵내빵ServiceAgree')
+  const bBtn= document.querySelector('#사이트Agree')
+  const cBtn= document.querySelector('#개인정보Agree')
+
+  if(storeName.value==""||storeNum.value==""||detailAddress.value==""||aBtn.checked==false||bBtn.checked==false||cBtn.checked==false){
+    alert("필수란을 채워주세요.")
+  }
+  else{
+    window.location.href = 'http://127.0.0.1:5502/handleReserve.html'
+  }
+}
+
+//전체 버튼
+function selectAll(selectAll)  {
+  const checkboxes 
+     = document.querySelectorAll('input[type="checkbox"]');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked
+  })
 }

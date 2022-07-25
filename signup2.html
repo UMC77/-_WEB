@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>니빵내빵</title>
     <link rel="stylesheet" href="css/style.css">
-   <script src="js/allSelect.js"></script>
+   <script src="js/signup.js"></script>
    <!-- 위치찾기 -->
    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
@@ -37,21 +37,28 @@
             <div class="center-middle">
                 <div class="a1">
                     <a href="#" style="cursor: pointer">상호<span style="color:#FA6660">*</span></a>
-                    <input class="a1-box" type="text" placeholder="상호를 입력해주세요" />
+                    <input id="storeName"class="a1-box" type="text" placeholder="상호를 입력해주세요" />
                 </div>
                 <div class="a2">
                     <a href="#" style="cursor: pointer">매장 전화번호<span style="color:#FA6660">*</span></a>
-                    <input class="a2-box" type="tel" placeholder="숫자만 입력해주세요" />
+                    <input id="storeNum" class="a2-box" type="tel" placeholder="숫자만 입력해주세요" />
                 </div>
 
                 <!-- 주소 -->
                 <div class="a3">
                     <a href="#" style="cursor: pointer">주소 검색
                         <span style="color:#FA6660">*</span></a>
-                    <input type="text" class="xx" id="sample6_postcode" placeholder="찾기">
-<input type="text"class="a3-box" id="sample6_address" placeholder="주소 검색"><br>
-<input type="button" class="find" onclick="sample6_execDaumPostcode()" value="찾기"><br>
+                    <!-- <input id="address" type="text"class="a3-box" id="sample6_address" placeholder="주소 검색"><br>
+                        <input type="button" class="find" onclick="sample6_execDaumPostcode()" value="찾기"><br>
 <input type="text" class="ea" id="sample6_detailAddress" placeholder="상세주소">
+<a href="#"  class="bb" style="cursor: pointer">참고 항목
+</a>
+<input type="text" class="a33-box" id="sample6_extraAddress" placeholder="참고항목"> -->
+
+
+<input type="text" class="xx" id="sample6_postcode" placeholder="우편번호">
+<input type="button" class="find" onclick="sample6_execDaumPostcode()" value="찾기"><br>
+<input type="text" class="a3-box" id="sample6_address" placeholder="주소 검색"><br>
 <a href="#"  class="bb" style="cursor: pointer">참고 항목
 </a>
 <input type="text" class="a33-box" id="sample6_extraAddress" placeholder="참고항목">
@@ -101,7 +108,7 @@
                 document.getElementById('sample6_postcode').value = data.zonecode;
                 document.getElementById("sample6_address").value = addr;
                 // 커서를 상세주소 필드로 이동한다.
-                document.getElementById("sample6_detailAddress").focus();
+                // document.getElementById("sample6_detailAddress").focus();
             }
         }).open();
     }
@@ -110,7 +117,7 @@
                 </div>
 
                 <div class="a4"><a href="#" style="cursor: pointer">상세주소<span style="color:#FA6660">*</span></a>
-                    <input class="a4-box" type="text" placeholder="상세주소를 입력해주세요" />
+                    <input id="detailAddress"class="a4-box" type="text" placeholder="상세주소를 입력해주세요" />
                 </div>
                 <div class="a5"><a href="#" style="cursor: pointer">매장 위치 상세설명</a>
                     <input class="a5-box" type="text" placeholder="매장 위치를 상세히 입력해주세요" />
@@ -157,8 +164,7 @@
                 </div>
 
                 <div class="signup">
-                    <button class="signup-btn">회원 가입 하기</button>
-                    onclick="location.href='main.html'"
+                    <button class="signup-btn" onclick="signup()">회원 가입 하기</button>
                 </div>
             </div>
 
