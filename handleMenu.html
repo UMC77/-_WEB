@@ -1,1 +1,120 @@
-<input type="time">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>메뉴 관리</title>
+    <style>
+        .reserve_btn {
+            background-color: var(--main);
+            border: 1px solid var(--main);
+        }
+
+        .wait_res {
+            color: #ffffff;
+        }
+
+        .reserve_box {
+            margin-top: -18px;
+        }
+
+        .reserve_menu span:nth-child(3) {
+            color: var(--main);
+        }
+
+        .reserve_menu span:first-child {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <div class="warp">
+
+        <div class="reserve_menu">
+            <span>예약 관리</span>
+            <span>가게 정보 관리</span>
+            <span>메뉴 관리</span>
+            <span>리뷰 관리</span>
+
+        </div>
+
+        <div class="reserve">
+            <div class="reserve_box">
+                <div class="reserve_column wait_res" onclick="goWait()">
+                    <span>전체</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column complete_res" onclick="goComplete()">
+                    <span>판매중</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column cancel_res" onclick="goCancel()">
+                    <span>품절</span>
+                    <span>0개</span>
+                </div>
+                <div class="reserve_column all_res" onclick="goAll()">
+                    <span>메뉴 숨김</span>
+                    <span>0개</span>
+                </div>
+            </div>
+
+            <div class="select_all">
+                <select class="select">
+                    <option>빵종류</option>
+                    <option>비건빵</option>
+                    <option>케이크</option>
+                    <option>샌드위치</option>
+                    <option>크루아상</option>
+                    <option>통밀빵</option>
+                    <option>도넛류</option>
+                    <option>파이</option>
+                    <option>와플</option>
+                    <option>베이글</option>
+                    <option>페스츄리</option>
+                    <option>쿠키</option>
+                    <option>마카롱</option>
+                    <option>소금빵</option>
+                    <option>스콘</option>
+                    <option>고로케</option>
+                </select>
+                <div class="search">
+                    <input type="text" placeholder="검색">
+                    <i class="fa-solid fa-lg fa-magnifying-glass"></i>
+                </div>
+
+                <a class="plus_menu" href="#">카테고리 추가</a>
+            </div>
+
+            <div class="select_header">
+                <select class="select">
+                    <option>빵종류</option>
+                    <option>비건빵</option>
+                    <option>케이크</option>
+                    <option>샌드위치</option>
+                    <option>크루아상</option>
+                    <option>통밀빵</option>
+                    <option>도넛류</option>
+                    <option>파이</option>
+                    <option>와플</option>
+                    <option>베이글</option>
+                    <option>페스츄리</option>
+                    <option>쿠키</option>
+                    <option>마카롱</option>
+                    <option>소금빵</option>
+                    <option>스콘</option>
+                    <option>고로케</option>
+                </select>
+            </div>
+            <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+            <script src="js/reserve.js"></script>
+</body>
+
+
+</html>
