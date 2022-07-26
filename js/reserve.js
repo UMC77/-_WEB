@@ -22,3 +22,18 @@ window.onload = function () {
   document.querySelector(".modal_close").addEventListener("click", offClick);
   document.querySelector(".modal_close2").addEventListener("click", offClick);
 };
+
+function goWait() {
+  window.location.href = "http://127.0.0.1:5502/handleReserve.html";
+}
+
+function goComplete() {
+  window.location.href = "http://127.0.0.1:5502/reserved.html";
+}
+function goAll() {
+  window.location.href = "http://127.0.0.1:5502/allReserved.html";
+}
+
+function goCancel() {
+  window.location.href = "http://127.0.0.1:5502/cancelReserved.html";
+}

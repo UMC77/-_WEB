@@ -1,0 +1,62 @@
+.select_all {
+  margin-top: 40px;
+  display: flex;
+}
+
+.select {
+  box-sizing: border-box;
+  width: 137px;
+  height: 45px;
+  padding: 10px 10px;
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.search {
+  position: relative;
+  width: 300px;
+
+  margin-right: 385px;
+}
+
+.search input {
+  box-sizing: border-box;
+  position: relative;
+  width: 283px;
+  height: 45px;
+
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.search i {
+  position: absolute;
+  left: 15px;
+  top: 23px;
+  color: var(--main);
+}
+
+.plus_menu {
+  color: var(--main);
+}
+
+.select_header {
+  width: 952px;
+  height: 65px;
+  background: #ffffff;
+  /* 항목별 구분선 컬러 */
+
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #e5e5e7;
+  border-radius: 0px;
+  margin-top: 15px;
+  padding: 8px 30px;
+}

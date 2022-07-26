@@ -38,21 +38,21 @@
             <button class="reserve_btn">주문 예약</button>
             <button class="reserve_btn">매장 판매</button>
             <i class="fa-regular fa-circle-question"></i>
-            
+
             <div class="reserve_box">
-                <div class="reserve_column wait_res">
+                <div class="reserve_column wait_res" onclick="goWait()">
                     <span>접수 대기</span>
                     <span>0개</span>
                 </div>
-                <div class="reserve_column complete_res">
+                <div class="reserve_column complete_res" onclick="goComplete()">
                     <span>접수 완료</span>
                     <span>0개</span>
                 </div>
-                <div class="reserve_column cancel_res">
+                <div class="reserve_column cancel_res" onclick="goCancel()">
                     <span>취소 주문</span>
                     <span>0개</span>
                 </div>
-                <div class="reserve_column all_res">
+                <div class="reserve_column all_res" onclick="goAll()">
                     <span>전체 내역</span>
                     <span>0개</span>
                 </div>
@@ -120,7 +120,7 @@
     </div>
 
 
-
+    <script src="js/reserve.js"></script>
     <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
 </body>
 
