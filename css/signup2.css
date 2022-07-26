@@ -62,7 +62,7 @@ a:active {
   display: block;
   width: 75px;
   height: 27px;
-  margin-left: 100px;
+  margin-left: 290px;
   border: 1px solid #FF9900;
   background-color: #FF9900;
   border-radius: 53px;
@@ -79,7 +79,7 @@ a:active {
     color: #333333;
     font-size: 24px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 20px;
     font-weight: 100;
 }
 
@@ -308,7 +308,7 @@ a:active {
     width: 420px;
     background-color: 
     #F5F5F5;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 40px;
     box-sizing: border-box;
 }

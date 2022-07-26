@@ -63,7 +63,7 @@ a:active {
   display: block;
   width: 75px;
   height: 27px;
-  margin-left: 100px;
+  margin-left: 160px;
   border: 1px solid #FF9900;
   background-color: #FF9900;
   border-radius: 53px;
@@ -79,8 +79,12 @@ a:active {
   color: #333333;
   font-size: 24px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 20px;
   font-weight: 100;
+}
+
+.top-tt {
+  font-weight: 400;
 }
 
 .hide {
@@ -287,4 +291,27 @@ a:active {
   display: block;
   width: 500px;
   height: 55px;
+}
+
+/* 이미지 */
+.img1 {
+  width: 23px;
+  margin-left: 180px;
+  margin-top: 10px;
+}
+
+.imgLine {
+width: 126px;
+height: 0px;
+border-bottom: 2px solid #E9E9E9;
+position:relative;
+left: 25px;
+bottom: 10px;
+}
+
+.img2 {
+  position: relative;
+  width: 23px;
+  bottom: 20px;
+  left: 310px;
 }
