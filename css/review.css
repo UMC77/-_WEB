@@ -346,7 +346,7 @@ button.own_ans:active {
 }
 
 /* 팝업창 */
-.modal_wrap {
+.modal_wrap_review {
   display: none;
   width: 660px;
   height: 310px;
@@ -382,7 +382,7 @@ button.own_ans:active {
   color: #282828;
 }
 
-.modal_close {
+.modal_close_review {
   padding-top: 11px;
   position: absolute;
   left: 93.79%;
