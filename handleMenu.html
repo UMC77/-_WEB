@@ -38,10 +38,11 @@
     <div class="warp">
 
         <div class="reserve_menu">
-            <span>예약 관리</span>
+            <span onclick="goReserve()">예약 관리</span>
             <span>가게 정보 관리</span>
-            <span>메뉴 관리</span>
-            <span>리뷰 관리</span>
+            <span onclick="goMenu()">메뉴 관리</span>
+            <span onclick="goReview()">리뷰 관리</span>
+
 
         </div>
 
@@ -89,8 +90,10 @@
                     <i class="fa-solid fa-lg fa-magnifying-glass"></i>
                 </div>
 
-                <a class="plus_menu" href="#">카테고리 추가</a>
+                <a class="plus_category" href="#"><span>+</span> <span>카테고리 추가</span></a>
+
             </div>
+
 
             <div class="select_header">
                 <select class="select">
@@ -112,8 +115,13 @@
                     <option>고로케</option>
                 </select>
             </div>
-            <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
-            <script src="js/reserve.js"></script>
+
+
+            <a class="plus_menu" href="http://127.0.0.1:5502/addMenu.html"><span>+ </span><span>메뉴 추가</span></< /a>
+                <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+                <script src="js/goNext.js"></script>
+        </div>
+
 </body>
 
 
