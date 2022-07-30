@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>메뉴 추가</title>
+    <script src="js/goNext.js"></script>
+    <script src="js/addMenu.js"></script>
     <style>
         .reserve_btn {
             background-color: var(--main);
@@ -27,6 +29,11 @@
 
         .reserve_menu span:first-child {
             margin-top: 20px;
+        }
+
+        .warp {
+            height: 175vh;
+            width: 100%;
         }
     </style>
 </head>
@@ -57,12 +64,82 @@
                     <span>메뉴 정보</span>
                     <span>*는 필수작성 정보입니다.</span>
                 </div>
+
+                <div class="info_plus">
+                    <span class="info_title">사진 추가<span class="essential_info">*</span></span>
+                    <div class="filebox">
+                        <input class="upload-name" placeholder="첨부파일">
+                        <label for="file">파일 선택하기</label>
+                        <input type="file" id="file" style="display: none;" />
+
+                    </div>
+
+                </div>
+                <div class="info_plus">
+                    <span class="info_title">메뉴명<span class="essential_info">*</span></span>
+                    <input type="text" placeholder="메뉴 이름을 입력해주세요" />
+                </div>
+
+                <div class="info_plus">
+                    <span class="info_title">가격<span class="essential_info">*</span></span>
+                    <input type="text" placeholder="가격을 입력해주세요" />
+                </div>
+
+                <div class="info_plus">
+                    <span class="info_title">판매 여부<span class="essential_info">*</span></span>
+                    <div class="sell_btns">
+                        <button class="menu_sell">판매중</button>
+                        <button class="menu_sell">품절</button>
+                        <button class="menu_sell">메뉴 숨김</button>
+                    </div>
+                </div>
+
+                <div class="info_plus" id="menu_info">
+                    <span class="info_title">메뉴 설명</span>
+                    <textarea placeholder="식감, 특징들을 입력해주세요"></textarea>
+                </div>
+
+                <div class="info_plus" id="ingre_info">
+                    <span class="info_title ingre_header">재료 정보<h3 class="essential_info">(비건빵 필수)</h3></span>
+                    <table>
+                        <tr>
+                            <th>재료명</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="재료명을 정확히 입력해주세요" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="재료명을 정확히 입력해주세요" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="재료명을 정확히 입력해주세요" /></td>
+                        </tr>
+                        <tr>
+                            <td> <a class="plus_ingre" href="#"><span>+</span> <span>메뉴 추가</span></a></td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <div class="save_btn">
+                    <button>취소</button>
+                    <button>저장</button>
+                </div>
             </div>
+
         </div>
 
 
     </div>
-    <script src="js/goNext.js"></script>
+    <script>
+        $("#file").on("change", function () {
+            var fileName = $("#file").val();
+            $(".upload-name").val(fileName);
+        });
+
+    </script>
+
+
     <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
 </body>
 
