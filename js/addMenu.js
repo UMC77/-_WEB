@@ -62,3 +62,61 @@ function addCategory() {
   new_a.appendChild(new_span_plus);
   new_a.appendChild(new_span_menu);
 }
+
+function deleteMenu() {
+  const delete_menu = document.getElementById("menu_list");
+  delete_menu.remove();
+}
+
+window.onload = function () {
+  function addMenu() {
+    const addArea = document.getElementById("addCate");
+    //메뉴 리스트 div
+    let new_list = document.createElement("div");
+    new_list.className = "menu_list";
+    addArea.appendChild(new_list);
+    //메뉴 사진 div
+    let new_pic = document.createElement("div");
+    new_pic.className = "menu_pic";
+    addArea.appendChild(new_pic);
+    //메뉴 사진 이미지
+    let new_pic_img = document.createElement("img");
+    new_pic.appendChild(new_pic_img);
+    //메뉴 이름 div
+    let new_name = document.createElement("div");
+    new_name.className = "menu_name";
+    addArea.appendChild(new_name);
+    let new_span1 = document.createElement("span");
+    let new_span2 = document.createElement("span");
+    new_name.innerText("베이글");
+    new_name.innerText("3,800원");
+    new_name.appendChild(new_span1);
+    new_name.appendChild(new_span2);
+    //메뉴 셀렉트
+    let div_select = document.createElement("div");
+    div_select.className = "menu_select";
+
+    addArea.appendChild(div_select);
+    let new_select = document.createElement("select");
+    new_select.className = "menu_select";
+    div_select.new_select;
+
+    new_select.appendChild(new_select);
+
+    const options = ["판매여부", "판매중", "품절", "메누 숨김"];
+    for (const [index, a] of options.entries()) {
+      const opt = document.createElement("option");
+      opt.value = index;
+      opt.innerHTML = a;
+      new_select.appendChild(opt);
+    }
+    //메뉴 삭제
+    let new_del = document.createElement("div");
+    new_del.className = "menu_delete";
+    addArea.appendChild(new_del);
+    let new_btn = document.createElement("button");
+    new_btn.className("menu_delete_btn");
+    new_del.appendChild(new_btn);
+  }
+  document.getElementById("saveBtn").addEventListener("click", addMenu);
+};
