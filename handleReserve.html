@@ -21,6 +21,31 @@
             margin-top: 20px;
             color: var(--main);
         }
+
+        .reserve_list button span {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .size14 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        .size16 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .weight550 {
+            font-weight: 550;
+        }
     </style>
 </head>
 
@@ -32,10 +57,9 @@
 
         <div class="reserve_menu">
             <span onclick="goReserve()">예약 관리</span>
-            <span>가게 정보 관리</span>
+            <span onclick="goStoreMenu()">가게 정보 관리</span>
             <span onclick="goMenu()">메뉴 관리</span>
             <span onclick="goReview()">리뷰 관리</span>
-
         </div>
 
         <div class="reserve">
@@ -90,8 +114,9 @@
                     <!--주문 접수 버튼-->
                     <div class="list_column">
                         <span class="size16">2022.07.15 12:44:15</span>
-                        <span class="size16 weight550">김니빵</span>
+                        <span class="size16 weight550" style=" font-weight: 550;">김니빵</span>
                     </div>
+                    <!--weight 550 적용 안됨 문제-->
                 </button>
 
                 <div class="list_column">
@@ -106,10 +131,13 @@
                 </div>
             </div>
             <div class="reserve_list">
-                <div class="list_column">
-                    <span class="size16">2022.07.15 12:44:15</span>
-                    <span class="size16 weight550">김니빵</span>
-                </div>
+                <button type="button" id="modal_btn">
+                    <!--주문 접수 버튼-->
+                    <div class="list_column">
+                        <span class="size16">2022.07.15 12:44:15</span>
+                        <span class="size16 weight550" style=" font-weight: 550;">김니빵</span>
+                    </div>
+                </button>
                 <div class="list_column">
                     <span class="point_color size16 weight550">12,000원</span>
                 </div>

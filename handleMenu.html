@@ -39,11 +39,9 @@
 
         <div class="reserve_menu">
             <span onclick="goReserve()">예약 관리</span>
-            <span>가게 정보 관리</span>
+            <span onclick="goStoreMenu()">가게 정보 관리</span>
             <span onclick="goMenu()">메뉴 관리</span>
             <span onclick="goReview()">리뷰 관리</span>
-
-
         </div>
 
         <div class="reserve">
@@ -67,24 +65,30 @@
             </div>
 
             <div class="select_all">
-                <select class="select">
-                    <option>빵종류</option>
-                    <option>비건빵</option>
-                    <option>케이크</option>
-                    <option>샌드위치</option>
-                    <option>크루아상</option>
-                    <option>통밀빵</option>
-                    <option>도넛류</option>
-                    <option>파이</option>
-                    <option>와플</option>
-                    <option>베이글</option>
-                    <option>페스츄리</option>
-                    <option>쿠키</option>
-                    <option>마카롱</option>
-                    <option>소금빵</option>
-                    <option>스콘</option>
-                    <option>고로케</option>
-                </select>
+
+                <div class="select_box">
+                    <div class="selected">
+                        <div class="selected_val">전체</div>
+
+                        <div class="arrow">
+                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.1333L5.5 5.3333L10 1.1333" stroke="#FF9900" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                            </svg>
+
+                        </div>
+                    </div>
+                    <ul class="select">
+                        <li class="option_item">판매중</li>
+                        <li class="option_item">품절</li>
+                        <li class="option_item">메뉴 숨김</li>
+                    </ul>
+
+                </div>
+
                 <div class="search">
                     <input type="text" placeholder="검색">
                     <i class="fa-solid fa-lg fa-magnifying-glass"></i>
@@ -97,25 +101,38 @@
 
             <div id="addCate">
 
-                <div class="select_header">
-                    <select class="select">
-                        <option>빵종류</option>
-                        <option>비건빵</option>
-                        <option>케이크</option>
-                        <option>샌드위치</option>
-                        <option>크루아상</option>
-                        <option>통밀빵</option>
-                        <option>도넛류</option>
-                        <option>파이</option>
-                        <option>와플</option>
-                        <option>베이글</option>
-                        <option>페스츄리</option>
-                        <option>쿠키</option>
-                        <option>마카롱</option>
-                        <option>소금빵</option>
-                        <option>스콘</option>
-                        <option>고로케</option>
-                    </select>
+                <div class="select_header ">
+                    <div class="select_box" style="height: 40px;">
+                        <div class="selected">
+                            <div class="selected_val">빵종류</div>
+                            <div class="arrow">
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1.1333L5.5 5.3333L10 1.1333" stroke="#FF9900" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <ul class="select">
+
+                            <li class="option_item">비건빵</li>
+                            <li class="option_item">케이크</li>
+                            <li class="option_item">샌드위치</li>
+                            <li class="option_item">크루아상</li>
+                            <li class="option_item">통밀빵</li>
+                            <li class="option_item">도넛류</li>
+                            <li class="option_item">파이</li>
+                            <li class="option_item">와플</li>
+                            <li class="option_item">베이글</li>
+                            <li class="option_item">페스츄리</li>
+                            <li class="option_item">쿠키</li>
+                            <li class="option_item">마카롱</li>
+                            <li class="option_item">소금빵</li>
+                            <li class="option_item">스콘</li>
+                            <li class="option_item">고로케</li>
+                        </ul>
+                    </div>
                 </div>
 
 
@@ -128,12 +145,21 @@
                         <span>3,800원</span>
                     </div>
                     <div class="menu_select">
-                        <select class="select">
-                            <option>판매여부</option>
-                            <option>판매중</option>
-                            <option>품절</option>
-                            <option>메뉴 숨김</option>
-                        </select>
+                        <div class="select_box">
+                            <div class="selected">
+                                <div class="selected_val">판매중</div>
+                                <div class="arrow"><svg width="11" height="7" viewBox="0 0 11 7" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1.1333L5.5 5.3333L10 1.1333" stroke="#FF9900" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="select">
+                                <li class="option_item">품절</li>
+                                <li class="option_item">메뉴 숨김</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="menu_delete">
                         <button class="menu_delete_btn" onclick="deleteMenu()">메뉴 삭제</button>
@@ -151,8 +177,11 @@
 
         </div>
         <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+
         <script src="js/goNext.js"></script>
         <script src="js/addMenu.js"></script>
+        <script src="js/selectCustom.js"></script>
+
 </body>
 
 
