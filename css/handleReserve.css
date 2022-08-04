@@ -171,23 +171,6 @@ header {
   font-variation-settings: "CTGR" 100;
 }
 
-.size14 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.size16 {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-}
-
-.weight550 {
-  font-weight: 550;
-}
-
 /*팝업 창*/
 
 .modal_wrap {

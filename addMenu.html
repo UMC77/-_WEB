@@ -47,11 +47,9 @@
 
         <div class="reserve_menu">
             <span onclick="goReserve()">예약 관리</span>
-            <span>가게 정보 관리</span>
+            <span onclick="goStoreMenu()">가게 정보 관리</span>
             <span onclick="goMenu()">메뉴 관리</span>
             <span onclick="goReview()">리뷰 관리</span>
-
-
         </div>
 
         <div class="reserve">
@@ -89,9 +87,9 @@
                 <div class="info_plus">
                     <span class="info_title">판매 여부<span class="essential_info">*</span></span>
                     <div class="sell_btns">
-                        <button class="menu_sell">판매중</button>
-                        <button class="menu_sell">품절</button>
-                        <button class="menu_sell">메뉴 숨김</button>
+                        <button class="menu_sell" id="onsell" onclick="handleSellBtn()">판매중</button>
+                        <button class="menu_sell" id="offsell" onclick="handleNotSellBtn()">품절</button>
+                        <button class="menu_sell" id="hidesell" onclick="handleHideSellBtn()">메뉴 숨김</button>
                     </div>
                 </div>
 

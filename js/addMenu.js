@@ -120,3 +120,21 @@ window.onload = function () {
   }
   document.getElementById("saveBtn").addEventListener("click", addMenu);
 };
+
+var sellBtn = document.querySelector("#onsell");
+
+function handleSellBtn() {
+  sellBtn.classList.toggle("mainColor");
+}
+
+var notSellBtn = document.querySelector("#offsell");
+
+function handleNotSellBtn() {
+  notSellBtn.classList.toggle("mainColor");
+}
+
+var hideSellBtn = document.querySelector("#hidesell");
+
+function handleHideSellBtn() {
+  hideSellBtn.classList.toggle("mainColor");
+}
