@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>가게정보관리</title>
-    <script src="js/review.js"></script>
     <style>
         .complete_res {
             color: #ffffff;
@@ -41,8 +40,8 @@
 
         <div class="storeinfo">
             <div class="storeinfo_top">
-                <span>가게 정보 관리 수정</span>
-                <span style="color:#FA6660; font-size: 16px; padding-left: 280px;">초기화</span>
+                <span class="info-top">가게 정보 관리 수정</span>
+                <span class="info-top-init" >초기화</span>
             </div>
 
             <div class="storeinfo_info">
@@ -52,15 +51,18 @@
                 <span class="q-line"></span>
                 <div id="box-q" class="q1">
                     <fieldset>
-                        <label>사진 추가<span style="color:#FA6660">*</span></label>
-                        <input id="addPhoto" class="q1-box" type="text" placeholder="등록된 사진이 없습니다. 사진을 등록해주세요." >
-                      </fieldset>
+                        <label class="info-label">사진 추가<span style="color:#FA6660">*</span></label>
+                        <input id="addPhoto" for="file_input"class="q1-box" placeholder="등록된 사진이 없습니다. 사진을 등록해주세요.">
+                        <label class="select_image" for="file">파일 선택하기</label>
+                        <input type="file" id="file" style="display: none;"/>
+
+                    </fieldset>
                 </div>
                 <span class="q2-line"></span>
 
                 <div id="box-q" class="q2">
                     <fieldset>
-                        <label>상호명<span style="color:#FA6660">*</span></label>
+                        <label class="info-label">상호명<span style="color:#FA6660">*</span></label>
                         <input id="storeName" class="q2-box" type="text" placeholder="상호명을 입력해주세요." >
                       </fieldset>
                 </div>
@@ -68,7 +70,7 @@
 
                 <div id="box-q" class="q3">
                     <fieldset>
-                        <label>사업자등록번호<span style="color:#FA6660">*</span></label>
+                        <label class="info-label">사업자등록번호<span style="color:#FA6660">*</span></label>
                         <input id="ownNum" class="q3-box" type="text" placeholder="사업자등록번호를 입력해주세요." >
                       </fieldset>
                 </div>
@@ -76,7 +78,7 @@
 
                 <div id="box-q" class="q4">
                     <fieldset>
-                        <label>매장 주소<span style="color:#FA6660">*</span></label>
+                        <label class="info-label">매장 주소<span style="color:#FA6660">*</span></label>
                         <input id="storeAddress" class="q4-box" type="text" placeholder="매장 주소를 입력해주세요." >
                       </fieldset>
                 </div>
@@ -84,7 +86,7 @@
 
                 <div id="box-q" class="q5">
                     <fieldset>
-                        <label>매장 전화번호<span style="color:#FA6660">*</span></label>
+                        <label class="info-label">매장 전화번호<span style="color:#FA6660">*</span></label>
                         <input id="storeNum" class="q5-box" type="tel" placeholder="매장 전화번호를 입력해주세요." >
                       </fieldset>
                 </div>
@@ -92,23 +94,152 @@
 
                 <div id="box-q" class="q6">
                     <fieldset>
-                        <label>운영일<span style="color:#FA6660">*</span></label>
-                        <input id="storeOpen" class="6-box" type="date" placeholder="운영일을 입력해주세요." >
+                        <label class="info-label">운영일<span style="color:#FA6660">*</span></label>
+                        <div class="openDay">
+                            <div class="open_checkbox">
+                               <input type="checkbox" class="form-checkbox-input">
+                               <label class="day">월요일</label>
+                               <i class="info-checkbox-icon" type="checkBox">
+                               </i>
+                               <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                            </div>
+                            <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">화요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">수요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">목요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">금요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">토요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">일요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                        </div>
+
                       </fieldset>
                 </div>
                 <span class="q2-line"></span>
 
                 <div id="box-q" class="q7">
                     <fieldset>
-                        <label>휴무일<span style="color:#FA6660">*</span></label>
-                        <input id="storeClose" class="7-box" type="date" placeholder="휴무일을 입력해주세요." >
+                        <label class="info-label">휴무일<span style="color:#FA6660">*</span></label>
+                        <div class="openDay">
+                            <div class="open_checkbox">
+                               <input type="checkbox" class="form-checkbox-input">
+                               <label class="day">월요일</label>
+                               <i class="info-checkbox-icon" type="checkBox">
+                               </i>
+                               <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                            </div>
+                            <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">화요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">수요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">목요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">금요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">토요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                             <div class="open_checkbox">
+                                <input type="checkbox" class="form-checkbox-input">
+                                <label class="day">일요일</label>
+                                <i class="info-checkbox-icon" type="checkBox">
+                                </i>
+                                <input class="info-time" type="time">
+                               <span class="info-bar">~</span>
+                               <input class="info-time-end" type="time">
+                             </div>
+                        </div>
                       </fieldset>
                 </div>
                 <span class="q2-line"></span>
 
                 <div id="box-q" class="q8">
                     <fieldset>
-                        <label>매장 소개<span style="color:#FA6660">*</span></label>
+                        <label class="info-label">매장 소개<span style="color:#FA6660">*</span></label>
                         <input id="store_intro" class="q8-box" type="text" placeholder="등록된 매장 소개가 없습니다. 매장 소개를 입력해주세요." >
                       </fieldset>
                 </div>

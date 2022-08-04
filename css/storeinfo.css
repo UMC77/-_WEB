@@ -13,7 +13,7 @@ header {
   .warp {
     display: flex;
     background-color:#F9F9F9;
-    height: 1360px;
+    height: 2267px;
 }
 
 .storeinfo_top {
@@ -24,6 +24,10 @@ header {
     left: 365px;
     top: 108px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-top{
+    display: block;
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 600;
@@ -34,9 +38,17 @@ header {
     padding-top: 24px;
 }
 
+.info-top-init {
+    position: relative;
+    color:#FA6660; 
+    float: right; 
+    font-size: 16px; 
+    bottom: 20px;
+    right: 30px;
+}
+
 .storeinfo_info{
     width: 839px;
-
     position: absolute;
     top: 200px;
     left: 446px;
@@ -58,6 +70,8 @@ header {
     font-variation-settings: 'CTGR' 100;   
 }
 
+/* 입력박스 */
+
 .q-line{
     display: block;
     border-top: 2px solid #E5E5E7;
@@ -69,8 +83,8 @@ header {
 #box-q {
     height: 115px;
     width: 839px;
-    margin-top: 10px;
     padding-left: 36px;
+    margin-top:10px;
 }
 
 .q2-line{
@@ -81,7 +95,8 @@ header {
     margin-left: 21px;
 }
 
-label {
+
+.info-label {
     font-family: 'Noto Sans';
     font-style: normal;
     font-weight: 500;
@@ -89,7 +104,26 @@ label {
     line-height: 22px;
     color: #333333;
     display: inline-block;
-    margin-top: 43.5px;
+    margin-top: 40.5px;
+}
+
+
+.select_image {
+    width: 123px;
+    height: 55px;
+    border-radius: 3px;
+    background: #FFFFFF;
+    border: 1px solid #282828;
+    display: inline-block;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #282828;
+    padding-top: 16px;
+    margin-left: 10px;
 }
 
 .q1-box {
@@ -163,10 +197,11 @@ label {
     padding-left: 15px;
 }
 
+/* 취소 저장 버튼 */
 .cancle {
     position: absolute;
     left: 660px;
-    top: 1320px;
+    top: 2120px;
     text-align: center;
     border: 1px solid #FF9900;
     border-radius: 3px;
@@ -184,7 +219,7 @@ label {
 .save {
     position: absolute;
     left: 871px;
-    top: 1320px;
+    top: 2120px;
     text-align: center;
     border: 1px solid #FF9900;
     border-radius: 3px;
@@ -197,4 +232,117 @@ label {
     color: #FFFFFF;
     width: 200px;
     height: 55px;
+}
+
+/* 운영일 checkbox */
+.openDay {
+    position: relative;
+    left: 190px;
+    bottom: 20px;
+    width: 578px;
+    height: 420px;
+    background-color: #FFFFFF;
+    border: 1px solid #C0C0C0;
+}
+
+#box-q.q6 {
+    height: 470px;
+    margin-bottom: 30px;
+}
+
+#box-q.q7 {
+    height: 470px;
+    margin-bottom: 30px;
+}
+
+
+.open_checkbox {
+    box-sizing: border-box;
+    border-bottom: 1px solid #C0C0C0;
+    border-radius: 0px;
+    width: 578px;
+    height: 60px;
+}
+
+.info-checkbox-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: 24px;
+    border: 1.5px solid #282828;
+    background: #FFFFFF;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    right: 40px;
+}
+
+.day {
+    position: relative;
+    left: 55px;
+    top: 5px;
+}
+
+.info-checkbox-icon:before {
+    content: "";
+    position: absolute;
+    background: #333333;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    top: 6px;
+    left: 17px;
+    width: 1px;
+    height: 14.5px;
+} 
+
+.info-checkbox-icon::after {
+    top: 11px;
+    left: 9px;
+    height: 9px;
+    transform: rotate(-45deg);
+    content: "";
+    position: absolute;
+    background: #333333;
+    box-sizing: border-box;
+    width: 1px;
+}
+
+.info-time {
+    position: relative;
+    width: 183px;
+    height: 30px;
+    left: 60px;
+    background: #FFFFFF;
+    border: 1px solid #9A9A9A;
+    border-radius: 3px;
+    top: 5px;
+}
+
+.info-bar {
+    width: 9px;
+    height: 22px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 22px;
+    color: #282828;
+    font-stretch: 100;
+    font-variation-settings: 'CTGR' 100;
+    position: relative;
+    left: 70px;
+    top: 5px;
+}
+
+.info-time-end {
+    position: relative;
+    width: 183px;
+    height: 30px;
+    top: 5px;
+    left: 80px;
+    background: #FFFFFF;
+    border: 1px solid #9A9A9A;
+    border-radius: 3px;
 }

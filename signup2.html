@@ -78,19 +78,19 @@
                     <a href="#" style="cursor: pointer">주소 검색
                         <span style="color:#FA6660">*</span></a>
 
-<input type="text" class="xx" id="sample6_postcode" placeholder="우편번호">
-<button class="find" onclick="sample6_execDaumPostcode()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
-    <path d="M8 15.3311C11.866 15.3311 15 12.2725 15 8.49952C15 4.72656 11.866 1.66797 8 1.66797C4.13401 1.66797 1 4.72656 1 8.49952C1 12.2725 4.13401 15.3311 8 15.3311Z" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M19 19.2348L13 13.3792" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg></button>
-<!-- <input type="button" class="find" onclick="sample6_execDaumPostcode()" ><br> -->
-<input type="text" class="a3-box" id="sample6_address" placeholder="주소 검색"><br>
-<a href="#"  class="bb" style="cursor: pointer">참고 항목
-</a>
-<input type="text" class="a33-box" id="sample6_extraAddress" placeholder="참고항목">
+                    <input type="text" class="xx" id="sample6_postcode" placeholder="우편번호">
+                    <button class="find" onclick="sample6_execDaumPostcode()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                    <path d="M8 15.3311C11.866 15.3311 15 12.2725 15 8.49952C15 4.72656 11.866 1.66797 8 1.66797C4.13401 1.66797 1 4.72656 1 8.49952C1 12.2725 4.13401 15.3311 8 15.3311Z" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 19.2348L13 13.3792" stroke="#FF9900" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg></button>
+                    <!-- <input type="button" class="find" onclick="sample6_execDaumPostcode()" ><br> -->
+                    <input type="text" class="a3-box" id="sample6_address" placeholder="주소 검색"><br>
+                    <a href="#"  class="bb" style="cursor: pointer">참고 항목
+                    </a>
+                    <input type="text" class="a33-box" id="sample6_extraAddress" placeholder="참고항목">
 
-<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-<script>
+                    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+                    <script>
     function sample6_execDaumPostcode() {
         new daum.Postcode({
             oncomplete: function(data) {
@@ -138,7 +138,7 @@
             }
         }).open();
     }
-</script>
+                    </script>
                     
                 </div>
 

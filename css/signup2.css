@@ -313,13 +313,14 @@ a:active {
 }
 
 .form-checkbox {
-    display: inline-block;
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     color: #333333;
-    margin-top: 14px;
+    /* margin-top: 14px; */
     vertical-align: middle;
     margin-left: 36px;
+    bottom: 23px;
 }
 
 input[type=checkbox] {
@@ -337,7 +338,6 @@ input {
 
 
 .a11 .form-checkbox-label {
-    margin-bottom: 0px;
     padding-left: 26px;
 }
 
@@ -346,6 +346,7 @@ input {
     padding: 0 0 0 40px;
     display: inline-block;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .a11 .form-checkbox-icon {

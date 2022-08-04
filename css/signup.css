@@ -92,7 +92,7 @@ a:active {
 }
 
 /* 센터 middle part */
-.center-form .center-middle {
+.center-form .center-middle1 {
     display: block;
     width: 500px;
     height: 410px;
@@ -100,19 +100,19 @@ a:active {
     text-align: left;
 }
 
-.center-middle .aa1 {
+.center-middle1 .aa1 {
     display: inline-block;
     height: 55px;
     width: 100%;
 }
-.center-middle .aa1>fieldset>label {
+.center-middle1 .aa1>fieldset>label {
     display: inline-block;
     font-size: 14px;
     font-weight: 400;
     color: #333333;
 }
 
-.center-middle .aa1 .aa1-box {
+.center-middle1 .aa1 .aa1-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -124,14 +124,14 @@ a:active {
     padding-left: 10px;
 }
 
-.center-middle .aa2 {
+.center-middle1 .aa2 {
     display: inline-block;
     height: 55px;
     width: 100%;
     margin-top: 17px;
 }
 
-.center-middle .aa2>fieldset>label {
+.center-middle1 .aa2>fieldset>label {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -139,7 +139,7 @@ a:active {
   padding-top: 10px;
 }
 
-.center-middle .aa2 .aa2-box {
+.center-middle1 .aa2 .aa2-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -151,14 +151,14 @@ a:active {
     padding-left: 10px;
 }
 
-.center-middle .aa3 {
+.center-middle1 .aa3 {
     display: inline-block;
     height: 55px;
     width: 100%;
     margin-top: 17px;
 }
 
-.center-middle .aa3>fieldset>label {
+.center-middle1 .aa3>fieldset>label {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -166,7 +166,7 @@ a:active {
   padding-top: 10px;
 }
 
-.center-middle .aa3 .aa3-box {
+.center-middle1 .aa3 .aa3-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -178,14 +178,14 @@ a:active {
     padding-left: 10px;
 }
 
-.center-middle .aa4 {
+.center-middle1 .aa4 {
     display: inline-block;
     height: 55px;
     width: 100%;
     margin-top: 17px;
 }
 
-.center-middle .aa4>fieldset>label {
+.center-middle1 .aa4>fieldset>label {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -193,7 +193,7 @@ a:active {
   padding-top: 10px;
 }
 
-.center-middle .aa4 .aa4-box {
+.center-middle1 .aa4 .aa4-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -205,21 +205,21 @@ a:active {
     padding-left: 10px;
 }
 
-.center-middle .aa5 {
+.center-middle1 .aa5 {
     display: inline-block;
     height: 55px;
     width: 100%;
     margin-top: 17px;
 }
 
-.center-middle .aa5>fieldset>label {
+.center-middle1 .aa5>fieldset>label {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
   padding-top: 10px;
 }
-.center-middle .aa5 .aa5-box {
+.center-middle1 .aa5 .aa5-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -231,14 +231,14 @@ a:active {
     padding-left: 10px;
 }
 
-.center-middle .aa6 {
+.center-middle1 .aa6 {
     display: inline-block;
     height: 55px;
     width: 100%;
     margin-top: 17px;
 }
 
-.center-middle .aa6>fieldset>label {
+.center-middle1 .aa6>fieldset>label {
   display: inline-block;
   font-size: 14px;
   font-weight: 400;
@@ -246,7 +246,7 @@ a:active {
   padding-top: 10px;
 }
 
-.center-middle .aa6 .aa6-box {
+.center-middle1 .aa6 .aa6-box {
     border: 1px solid #C0C0C0;
     width: 340px;
     height: 50px;
@@ -260,7 +260,7 @@ a:active {
 
 /* 다음버튼 */
 
-.center-middle .next>button#btn_next{
+.center-middle1 .next>button#btn_next{
     width: 500px;
     height: 55px;
     border-radius: 3px;
@@ -284,7 +284,7 @@ a:active {
   margin-top: 46px;
 } */
 
-.center-middle .next>button#btn_next:active{
+.center-middle1 .next>button#btn_next:active{
     background-color: #FFFFFF;
     color: #F4AA41;
   position: absolute;
