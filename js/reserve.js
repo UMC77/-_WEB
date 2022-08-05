@@ -23,4 +23,20 @@ window.onload = function () {
   document.querySelector(".modal_refuse").addEventListener("click", offClick);
   document.querySelector(".modal_close").addEventListener("click", offClick);
   document.querySelector(".modal_close2").addEventListener("click", offClick);
+
+  function onHover() {
+    document.querySelector(".tooltip_question").style.display = "block";
+  }
+
+  function outHover() {
+    document.querySelector(".tooltip_question").style.display = "none";
+  }
+
+  document
+    .querySelector(".fa-circle-question")
+    .addEventListener("mouseover", onHover);
+
+  document
+    .querySelector(".fa-circle-question")
+    .addEventListener("mouseout", outHover);
 };

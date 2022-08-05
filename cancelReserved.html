@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>예약 관리-취소 주문</title>
+    <title>예약 관리-접수 대기</title>
     <style>
         .reserve_btn {
             background-color: var(--main);
@@ -20,6 +20,37 @@
         .reserve_menu span:first-child {
             margin-top: 20px;
             color: var(--main);
+        }
+
+
+
+        .reserve_list button span {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .size14 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        .size16 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .weight550 {
+            font-weight: 550;
+        }
+
+        .warp {
+            height: auto;
         }
     </style>
 </head>
@@ -38,10 +69,20 @@
         </div>
 
         <div class="reserve">
-            <button class="reserve_btn">오늘 예약</button>
-            <button class="reserve_btn">주문 예약</button>
-            <button class="reserve_btn">매장 판매</button>
-            <i class="fa-regular fa-circle-question"></i>
+
+            <div class="tooltip">
+                <button class="reserve_btn">오늘 예약</button>
+                <button class="reserve_btn">주문 예약</button>
+                <button class="reserve_btn">매장 판매</button>
+                <i class="fa-regular fa-circle-question "></i>
+                <div class="tooltip_question">
+                    <span class="tooltip_title">예약 가능 여부 선택 <span class="tooltip_red">(중복 선택 가능)</span></span>
+                    <span>오늘 예약: 당일 예약 판매를 진행하는 경우 </span>
+                    <span>주문 예약: 하루전 이상의 예약 판매를 진행하는 경우</span>
+                    <span>매장 판매: 예약을 받지 않고 현장 판매만 하는 경우</span>
+                </div>
+            </div>
+
 
             <div class="reserve_box">
                 <div class="reserve_column wait_res" onclick="goWait()">
@@ -83,230 +124,12 @@
             <div class="reserve_list">
                 <span>취소된 주문이 없습니다.</span>
             </div>
-            <!--   주문 있을때
-            <div class="reserve_list">
-                <button type="button" id="modal_btn">
-                    
-            <div class="list_column">
-                <span class="size16">2022.07.15 12:44:15</span>
-                <span class="size16 weight550">김니빵</span>
-            </div>
-            </button>
 
-            <div class="list_column">
-                <span class="point_color size16 weight550">12,000원</span>
-            </div>
-            <div class="list_column">
-                <span class="size14">2022.07.15 15:00</span>
-            </div>
-            <div class="list_column list_column-menu">
-                <span class="size14">[메뉴 3개]</span>
-                <span class="size14">소금빵x1, 크림치즈 베이글x1, 어니언 베이글x1</span>
-            </div>
-        </div>
-        <div class="reserve_list">
-            <div class="list_column">
-                <span class="size16">2022.07.15 12:44:15</span>
-                <span class="size16 weight550">김니빵</span>
-            </div>
-            <div class="list_column">
-                <span class="point_color size16 weight550">12,000원</span>
-            </div>
-            <div class="list_column">
-                <span class="size14">2022.07.15 15:00</span>
-            </div>
-            <div class="list_column list_column-menu">
-                <span class="size14">[메뉴 3개]</span>
-                <span class="size14">소금빵x1, 크림치즈 베이글x1, 어니언 베이글x1</span>
-            </div>
-        </div>
-        
-    </div> -->
-
-            <!--주문 접수 팝업창-->
-            <div class="black_bg"></div>
-
-            <!-- 주문 상세 팝업창 -->
-            <div class=" modal_wrap">
-                <div class="modal_detail_nav">
-                    <span>상세 주문 내역</span>
-                    <div class="modal_close">
-                        <a href="#"><i class="fa-thin fa-x  fa-lg"></i></a>
-                    </div>
-                </div>
-                <div class="modal_detail_cos">
-                    <span>김니빵</span>
-                    <span>2022.07.15 12:44:15 </span>
-                </div>
-
-                <div class="div_detail_menu">
-                    <div class="detail_column">
-                        <span>
-                            메뉴
-                        </span>
-                    </div>
-                    <div class="detail_column">
-                        <span>
-                            수량
-                        </span>
-                    </div>
-                    <div class="detail_column">
-                        <span>
-                            금액
-                        </span>
-                    </div>
-                </div>
-
-
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-                <div class="div_detail">
-                    <div class="menu_column">
-                        <span>
-                            크림치즈 베이글
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-
-
-                <div class="div_detail_total">
-                    <div class="menu_column">
-                        <span>
-                            합계
-                        </span>
-                    </div>
-                    <div class="menu_column">
-                        <span>
-                            1
-                        </span>
-                    </div>
-                    <div class="menu_column point_color">
-                        <span>
-                            3500원
-                        </span>
-                    </div>
-                </div>
-
-                <div class="close_wrap">
-                    <div class="modal_refuse">
-                        <a href="#">주문 거절</a>
-                    </div>
-                    <button type="button" id="modal_btn">
-                        <div class="modal_take">
-                            <a href="#">주문 수락</a>
-                        </div>
-                    </button>
-
-
-                </div>
-
-
-            </div>
-
-            <!-- 주문 접수 완료 안내 팝업창 -->
-            <div class="modal_alert">
-                <span>주문이 수락되었습니다.</span>
-                <div class="modal_close2">
-                    <a href="#">확인</a>
-                </div>
-            </div>
         </div>
 
 
         <script src="https://kit.fontawesome.com/8435e84bdd.js" crossorigin="anonymous"></script>
+        <script src="js/reserve.js"></script>
         <script src="js/goNext.js"></script>
 </body>
 
