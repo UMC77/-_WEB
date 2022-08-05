@@ -7,6 +7,8 @@
 @import "review.css";
 @import "handleMenu.css";
 @import "storeinfo.css";
+@import "addMenu.css";
+
 * {
   font-family: "Noto Sans";
   font-style: normal;
