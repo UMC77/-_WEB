@@ -37,57 +37,88 @@ a, a:active {
     margin: 80px auto 0 auto;
 }
 
-/* 헤더 만들때 제거하기 */
-/* .own-main .nav {
-    margin-top: 166px;
-} */
+ul.nav.clearfix {
+    height: 200px;
+}
+
+.own-container {
+    margin-bottom: 200px;
+}
 
 /* 네모칸들-- 예약관리, 가게 정보 관리, 메뉴관리, 리뷰관리 */
 .own-main .nav>li.n1 {
-    display: inline-block;
     width: 159.08px;
     height: 129.67px;
-    border: 1px solid 
-    #646464;
+    background: #FFFFFF;
+    border: 1px solid #646464;
     color: 
-    #333333;
+    #282828;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 19px;
     text-align: center;
     text-decoration: none;
     padding-top: 91.44px;
     box-sizing: border-box;
+    position: relative;
+    top: 60px;
+}
+
+.reserve-img {
+    position: absolute;
+    bottom: 50px;
+    padding-left: 10px;
 }
 
 .own-main .nav>li.n2 {
-    display: inline-block;
     width: 159.08px;
     height: 129.67px;
-    margin-left: 69px;
+    background: #FFFFFF;
     border: 1px solid 
     #646464;
     color: 
-    #333333;
+    #282828;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 19px;
     text-align: center;
     text-decoration: none;
     padding-top: 91.44px;
     box-sizing: border-box;
+    position: relative;
+    bottom: 70px;
+    left: 240px;
 }
 
+.storeinfo-img{
+    position: absolute;
+    bottom: 50px;
+    padding-left: 20px;
+}
 .own-main .nav>li.n3 {
-    display: inline-block;
     width: 159.08px;
     height: 129.67px;
-    margin-left: 69px;
+    background: #FFFFFF;
     border: 1px solid 
     #646464;
     color: 
-    #333333;
+    #282828;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 19px;
     text-align: center;
     text-decoration: none;
     padding-top: 91.44px;
     box-sizing: border-box;
+    position: relative;
+    bottom: 200px;
+    left: 470px;
 }
 
 .own-main .nav>li.n4 {
@@ -95,15 +126,29 @@ a, a:active {
     width: 159.08px;
     height: 129.67px;
     margin-left: 69px;
+    background: #FFFFFF;
     border: 1px solid 
     #646464;
     color: 
-    #333333;
+    #282828;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
+    line-height: 19px;
     text-align: center;
     text-decoration: none;
     padding-top: 91.44px;
     box-sizing: border-box;
+    position: relative;
+    bottom: 330px;
+    left: 630px;
+}
+
+.review-img {
+    position: absolute;
+    bottom: 50px;
+    padding-left: 10px;
 }
 
 /* 배너 */
@@ -120,11 +165,34 @@ a, a:active {
     padding-top: 22.87px;
 }
 
-.own-main .own-mid>a {
+.mid-text>p {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 24px;
+    line-height: 33px;
     color: #FFFFFF;
 }
 
+.min-text>p:first-child {
+    padding-top: 33px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.min-text>p {
+    padding-top: 5.5px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
 /* 로그인창 */
 
 .own-login {
@@ -156,11 +224,12 @@ a, a:active {
 }
 
 .own-login .id-box {
-    margin-top: 19.61px;
+    margin-top: 24.61px;
     border: 1px solid #000000;
     width: 252.54px;
     height: 46.84px;
     border-radius: 10px;
+    padding-left: 10px;
 }
 
 .own-login .password-box {
@@ -170,17 +239,22 @@ a, a:active {
     width: 252.54px;
     height: 46.84px;
     border-radius: 10px;
+    padding-left: 10px;
 }
 
 .own-login .login-btn {
     width: 113.21px;
     height: 103.3px;
     background-color: 
-    #F4AA41;
+    #FF9900;
     border: 1px solid 
-    #F4AA41;
+    #FF9900;
     border-radius: 10px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 22px;
     text-align: center;
     color: #FFFFFF;
     position: absolute;
@@ -190,7 +264,11 @@ a, a:active {
 
 .own-login .login-find-btn {
     display: block;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: 11px;
+    line-height: 15px;
     text-align: right;
     color: #000000;
     margin-top: 14px;
@@ -215,14 +293,14 @@ a, a:active {
     margin-left: 10px;
     font-size: 16px;
     text-align: center;
-    color:#F4AA41;
+    color:#FF9900;
     font: bold;
     background-color: #FFFFFF;
-    border: 1px solid #F4AA41;
+    border: 1px solid #FF9900;
     border-radius: 10px;
 }
 
 .own-login .own-signup .signup-btn:active {
-    background-color: #F4AA41;
+    background-color: #FF9900;
     color: #FFFFFF;
 }
