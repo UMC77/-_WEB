@@ -1,348 +1,347 @@
 /* 가게정보관리css */
 
 header {
-    box-sizing: border-box;
-    width: 100%;
-    height: 78px;
-    left: 0px;
-    top: 0px;
-    background-color: #ffffff;
-    border-bottom: 2px solid var(--header);
-  }
+  box-sizing: border-box;
+  width: 100%;
+  height: 78px;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--header);
+}
 
-  .warp {
-    display: flex;
-    background-color:#F9F9F9;
-    height: 2267px;
+.warp {
+  display: flex;
+  background-color: #f9f9f9;
+  height: 2267px;
 }
 
 .storeinfo_top {
-    width: 953px;
-    height: 75px;
-    background-color: #FFFFFF;
-    position: absolute;
-    left: 365px;
-    top: 108px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  width: 953px;
+  height: 75px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 365px;
+  top: 108px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.info-top{
-    display: block;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #282828;
-    padding-top: 24px;
+.info-top {
+  display: block;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #282828;
+  padding-top: 24px;
 }
 
 .info-top-init {
-    position: relative;
-    color:#FA6660; 
-    float: right; 
-    font-size: 16px; 
-    bottom: 20px;
-    right: 30px;
+  position: relative;
+  color: #fa6660;
+  float: right;
+  font-size: 16px;
+  bottom: 20px;
+  right: 30px;
 }
 
-.storeinfo_info{
-    width: 839px;
-    position: absolute;
-    top: 200px;
-    left: 446px;
-    background-color: #FFFFFF;
-    padding-top: 21px;
+.storeinfo_info {
+  width: 839px;
+  position: absolute;
+  top: 200px;
+  left: 446px;
+  background-color: #ffffff;
+  padding-top: 21px;
 }
 
 .storeName {
-    margin-left: 344px;
-    margin-top: 41px;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 20px;
-    line-height: 27px;
-    text-align: center;
-    color: #282828;
-    font-stretch: 100;
-    font-variation-settings: 'CTGR' 100;   
+  margin-left: 344px;
+  margin-top: 41px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #282828;
+  font-stretch: 100;
+  font-variation-settings: "CTGR" 100;
 }
 
 /* 입력박스 */
 
-.q-line{
-    display: block;
-    border-top: 2px solid #E5E5E7;
-    width: 839px;
-    height: 0px;
-    margin-top: 22px;
+.q-line {
+  display: block;
+  border-top: 2px solid #e5e5e7;
+  width: 839px;
+  height: 0px;
+  margin-top: 22px;
 }
 
 #box-q {
-    height: 115px;
-    width: 839px;
-    padding-left: 36px;
-    margin-top:10px;
+  height: auto;
+  width: 839px;
+  padding-left: 36px;
+  margin-top: 10px;
+  padding-bottom: 30px;
 }
 
-.q2-line{
-    display: block;
-    border-top: 1px solid #E5E5E7;
-    width: 799px;
-    height: 0px;
-    margin-left: 21px;
+.q2-line {
+  display: block;
+  border-top: 1px solid #e5e5e7;
+  width: 799px;
+  height: 0px;
+  margin-left: 21px;
 }
-
 
 .info-label {
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #333333;
-    display: inline-block;
-    margin-top: 40.5px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #333333;
+  display: inline-block;
+  margin-top: 40.5px;
 }
 
-
 .select_image {
-    width: 123px;
-    height: 55px;
-    border-radius: 3px;
-    background: #FFFFFF;
-    border: 1px solid #282828;
-    display: inline-block;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    text-align: center;
-    color: #282828;
-    padding-top: 16px;
-    margin-left: 10px;
+  width: 123px;
+  height: 55px;
+  border-radius: 3px;
+  background: #ffffff;
+  border: 1px solid #282828;
+  display: inline-block;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #282828;
+  padding-top: 16px;
+  margin-left: 10px;
 }
 
 .q1-box {
-    width: 441px;
-    height: 55px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    margin-left: 107px;
-    padding-left: 15px;
+  width: 441px;
+  height: 55px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  margin-left: 107px;
+  padding-left: 15px;
 }
 
 .q2-box {
-    width: 579px;
-    height: 55px;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    border-radius: 3px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 30px;
-    padding-left: 15px;
+  width: 579px;
+  height: 55px;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  float: right;
+  margin-right: 34px;
+  margin-top: 30px;
+  padding-left: 15px;
 }
 
 .q3-box {
-    width: 579px;
-    height: 55px;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    border-radius: 3px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 30px;
-    padding-left: 15px;
+  width: 579px;
+  height: 55px;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  float: right;
+  margin-right: 34px;
+  margin-top: 30px;
+  padding-left: 15px;
 }
 
 .q4-box {
-    width: 579px;
-    height: 55px;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    border-radius: 3px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 30px;
-    padding-left: 15px;
+  width: 579px;
+  height: 55px;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  float: right;
+  margin-right: 34px;
+  margin-top: 30px;
+  padding-left: 15px;
 }
 
 .q5-box {
-    width: 579px;
-    height: 55px;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    border-radius: 3px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 30px;
-    padding-left: 15px;
+  width: 579px;
+  height: 55px;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  float: right;
+  margin-right: 34px;
+  margin-top: 30px;
+  padding-left: 15px;
 }
 
 .q8-box {
-    width: 579px;
-    height: 55px;
-    background: #FDFDFD;
-    border: 1px solid #C0C0C0;
-    border-radius: 3px;
-    float: right;
-    margin-right: 34px;
-    margin-top: 30px;
-    padding-left: 15px;
+  width: 579px;
+  height: 55px;
+  background: #fdfdfd;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  float: right;
+  margin-right: 34px;
+  margin-top: 30px;
+  padding-left: 15px;
+  max-height: 100px;
 }
 
 /* 취소 저장 버튼 */
 .cancle {
-    position: absolute;
-    left: 660px;
-    top: 2120px;
-    text-align: center;
-    border: 1px solid #FF9900;
-    border-radius: 3px;
-    background: #FFFFFF;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FF9900;
-    width: 200px;
-    height: 55px;
+  position: absolute;
+  left: 660px;
+  top: 2120px;
+  text-align: center;
+  border: 1px solid #ff9900;
+  border-radius: 3px;
+  background: #ffffff;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ff9900;
+  width: 200px;
+  height: 55px;
 }
 
 .save {
-    position: absolute;
-    left: 871px;
-    top: 2120px;
-    text-align: center;
-    border: 1px solid #FF9900;
-    border-radius: 3px;
-    background: #FF9900;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    color: #FFFFFF;
-    width: 200px;
-    height: 55px;
+  position: absolute;
+  left: 871px;
+  top: 2120px;
+  text-align: center;
+  border: 1px solid #ff9900;
+  border-radius: 3px;
+  background: #ff9900;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  width: 200px;
+  height: 55px;
 }
 
 /* 운영일 checkbox */
 .openDay {
-    position: relative;
-    left: 190px;
-    bottom: 20px;
-    width: 578px;
-    height: 420px;
-    background-color: #FFFFFF;
-    border: 1px solid #C0C0C0;
+  position: relative;
+  left: 190px;
+  bottom: 20px;
+  width: 578px;
+  height: 420px;
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
 }
 
 #box-q.q6 {
-    height: 470px;
-    margin-bottom: 30px;
+  height: 470px;
+  margin-bottom: 30px;
 }
 
 #box-q.q7 {
-    height: 470px;
-    margin-bottom: 30px;
+  height: 470px;
+  margin-bottom: 30px;
 }
 
-
 .open_checkbox {
-    box-sizing: border-box;
-    border-bottom: 1px solid #C0C0C0;
-    border-radius: 0px;
-    width: 578px;
-    height: 60px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #c0c0c0;
+  border-radius: 0px;
+  width: 578px;
+  height: 60px;
 }
 
 .info-checkbox-icon {
-    width: 30px;
-    height: 30px;
-    border-radius: 3px;
-    box-sizing: border-box;
-    display: inline-block;
-    line-height: 24px;
-    border: 1.5px solid #282828;
-    background: #FFFFFF;
-    cursor: pointer;
-    position: relative;
-    top: 15px;
-    right: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 24px;
+  border: 1.5px solid #282828;
+  background: #ffffff;
+  cursor: pointer;
+  position: relative;
+  top: 15px;
+  right: 40px;
 }
 
 .day {
-    position: relative;
-    left: 55px;
-    top: 5px;
+  position: relative;
+  left: 55px;
+  top: 5px;
 }
 
 .info-checkbox-icon:before {
-    content: "";
-    position: absolute;
-    background: #333333;
-    box-sizing: border-box;
-    transform: rotate(45deg);
-    top: 6px;
-    left: 17px;
-    width: 1px;
-    height: 14.5px;
-} 
+  content: "";
+  position: absolute;
+  background: #333333;
+  box-sizing: border-box;
+  transform: rotate(45deg);
+  top: 6px;
+  left: 17px;
+  width: 1px;
+  height: 14.5px;
+}
 
 .info-checkbox-icon::after {
-    top: 11px;
-    left: 9px;
-    height: 9px;
-    transform: rotate(-45deg);
-    content: "";
-    position: absolute;
-    background: #333333;
-    box-sizing: border-box;
-    width: 1px;
+  top: 11px;
+  left: 9px;
+  height: 9px;
+  transform: rotate(-45deg);
+  content: "";
+  position: absolute;
+  background: #333333;
+  box-sizing: border-box;
+  width: 1px;
 }
 
 .info-time {
-    position: relative;
-    width: 183px;
-    height: 30px;
-    left: 60px;
-    background: #FFFFFF;
-    border: 1px solid #9A9A9A;
-    border-radius: 3px;
-    top: 5px;
+  position: relative;
+  width: 183px;
+  height: 30px;
+  left: 60px;
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
+  top: 5px;
 }
 
 .info-bar {
-    width: 9px;
-    height: 22px;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 550;
-    font-size: 16px;
-    line-height: 22px;
-    color: #282828;
-    font-stretch: 100;
-    font-variation-settings: 'CTGR' 100;
-    position: relative;
-    left: 70px;
-    top: 5px;
+  width: 9px;
+  height: 22px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 22px;
+  color: #282828;
+  font-stretch: 100;
+  font-variation-settings: "CTGR" 100;
+  position: relative;
+  left: 70px;
+  top: 5px;
 }
 
 .info-time-end {
-    position: relative;
-    width: 183px;
-    height: 30px;
-    top: 5px;
-    left: 80px;
-    background: #FFFFFF;
-    border: 1px solid #9A9A9A;
-    border-radius: 3px;
+  position: relative;
+  width: 183px;
+  height: 30px;
+  top: 5px;
+  left: 80px;
+  background: #ffffff;
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
 }

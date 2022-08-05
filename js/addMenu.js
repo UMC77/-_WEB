@@ -103,7 +103,7 @@ window.onload = function () {
 
     new_select.appendChild(new_select);
 
-    const options = ["판매여부", "판매중", "품절", "메누 숨김"];
+    const options = ["판매여부", "판매중", "품절", "메뉴 숨김"];
     for (const [index, a] of options.entries()) {
       const opt = document.createElement("option");
       opt.value = index;
