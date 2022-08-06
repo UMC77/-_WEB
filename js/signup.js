@@ -11,20 +11,20 @@ const pwTest = document.querySelector('#pwTest'); //비밀번호 확인
 let name =  document.querySelector('#name'); //이름
 const phoneNum = document.querySelector('#phoneNum'); //휴대폰번호
 const Nextbtn=document.querySelector('#btn_next')
+let chaMsg= document.querySelector('.cha-message')
+let phoneMsg =document.querySelector('.phoneNum-message')
 
 // 2. 아이디 입력창에 키를 눌렀을때 조건문
-userId.onkeyup = function () {
-  
-if (id4Length(userId.value)) {// 함수의 값과 일치하면
-   sucMsg.classList.remove('hide') // sucMsg 클래스 hide 제거
+userId.onkeyup=function(){
+  if(id4Length(userId.value)){//
+    sucMsg.classList.remove('hide') // sucMsg 클래스 hide 제거
    failMsg.classList.add('hide')// failMsg 클래스 hide 추가
-}else {
-   sucMsg.classList.add('hide')// sucMsg 클래스 hide 추가
-   failMsg.classList.remove('hide')// failMsg 클래스 hide 제거
+  }else{
+    sucMsg.classList.add('hide')// sucMsg 클래스 hide 추가
+    failMsg.classList.remove('hide')// failMsg 클래스 hide 제거\
+  }
 }
 
-
-}
 
 //2-1 비밀번호 8자 이상
 function pw8Length(value) {
@@ -62,13 +62,28 @@ userPw.onkeyup=function(){
   }
 }
 
+//아이디에 특수문자 포함 x
+userId.onkeyup = function () {
+  var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+
+	if(special_pattern.test(userId.value) == true) {
+    chaMsg.classList.remove('hide')
+		return true;
+	} else {
+    chaMsg.classList.add('hide')
+		return false;
+	}
+}
+
+
 //버튼 이동
 function check() {
+  var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?]/gi
   let name =  document.querySelector('#name'); //이름
   let ownNum = document.querySelector('#ownNum') //사업자등록번호
   let userId = document.querySelector('#userId') //아이디
 
-  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false){
+  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false||chaMsg.classList.add('hide')){
     alert("필수란을 채워주세요.")
   }
   else{
@@ -76,10 +91,11 @@ function check() {
   }
 }
 
+//회원가입 승인
 function signup(){
   let storeName =  document.querySelector('#storeName'); //상호
   let storeNum = document.querySelector('#storeNum') //매장 전화번호
-  let address = document.querySelector('#address') //주소
+  let address = document.querySelector('#sample6_address') //주소
   let detailAddress = document.querySelector('#detailAddress') //주소
   // 서버형성되면 주소 추가||address.value==""||detailAddress==""
 
@@ -87,7 +103,7 @@ function signup(){
   const bBtn= document.querySelector('#사이트Agree')
   const cBtn= document.querySelector('#개인정보Agree')
 
-  if(storeName.value==""||storeNum.value==""||detailAddress.value==""||aBtn.checked==false||bBtn.checked==false||cBtn.checked==false){
+  if(storeName.value==""||storeNum.value==""||address.value==""||detailAddress.value==""||aBtn.checked==false||bBtn.checked==false||cBtn.checked==false){
     alert("필수란을 채워주세요.")
   }
   else{
