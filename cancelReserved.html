@@ -8,11 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
     <title>예약 관리-접수 대기</title>
     <style>
-        .reserve_btn {
-            background-color: var(--main);
-            border: 1px solid var(--main);
-        }
-
         .cancel_res {
             color: #ffffff;
         }
@@ -67,13 +62,11 @@
             <span onclick="goMenu()">메뉴 관리</span>
             <span onclick="goReview()">리뷰 관리</span>
         </div>
-
         <div class="reserve">
-
             <div class="tooltip">
-                <button class="reserve_btn">오늘 예약</button>
-                <button class="reserve_btn">주문 예약</button>
-                <button class="reserve_btn">매장 판매</button>
+                <button class="reserve_btn" id="today_btn" onclick="handleTodayBtn()">오늘 예약</button>
+                <button class="reserve_btn" id="early_btn" onclick="handleEarlyBtn()">주문 예약</button>
+                <button class="reserve_btn" id="store_btn" onclick="handleStoreBtn()">매장 판매</button>
                 <i class="fa-regular fa-circle-question "></i>
                 <div class="tooltip_question">
                     <span class="tooltip_title">예약 가능 여부 선택 <span class="tooltip_red">(중복 선택 가능)</span></span>
