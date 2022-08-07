@@ -9,9 +9,10 @@ header {
   border-bottom: 2px solid var(--header);
 }
 
-.warp {
+.warp-review {
   display: flex;
   background-color: var(--background);
+  height: auto;
 }
 
 /*예약 관리 가게정보 관리 ... 메뉴*/
@@ -434,4 +435,15 @@ button.own_ans:active {
 .btn_reg:active {
   background-color: #ffffff;
   color: #ff9900;
+}
+
+/* 하단바 */
+.own-bottom-review {
+  position: absolute;
+  width: 100%;
+  height: 170px;
+  left: 0px;
+  top: 700px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
 }

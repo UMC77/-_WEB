@@ -68,6 +68,7 @@ userId.onkeyup = function () {
 
 	if(special_pattern.test(userId.value) == true) {
     chaMsg.classList.remove('hide')
+  
 		return true;
 	} else {
     chaMsg.classList.add('hide')
@@ -83,7 +84,7 @@ function check() {
   let ownNum = document.querySelector('#ownNum') //사업자등록번호
   let userId = document.querySelector('#userId') //아이디
 
-  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false||chaMsg.classList.add('hide')){
+  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false){
     alert("필수란을 채워주세요.")
   }
   else{
