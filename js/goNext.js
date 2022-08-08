@@ -28,3 +28,15 @@ function goMenu() {
 function goStoreMenu() {
   window.location.href = "http://127.0.0.1:5502/storeinfo.html";
 }
+
+function goSellMenu() {
+  window.location.href = "http://127.0.0.1:5502/onSellMenu.html";
+}
+
+function goSoldoutMenu() {
+  window.location.href = "http://127.0.0.1:5502/soldoutMenu.html";
+}
+
+function goHideMenu() {
+  window.location.href = "http://127.0.0.1:5502/hideMenu.html";
+}
