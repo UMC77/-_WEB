@@ -14,18 +14,6 @@ const Nextbtn=document.querySelector('#btn_next')
 let chaMsg= document.querySelector('.cha-message')
 let phoneMsg =document.querySelector('.phoneNum-message')
 
-// 2. 아이디 입력창에 키를 눌렀을때 조건문
-userId.onkeyup=function(){
-  if(id4Length(userId.value)){//
-    sucMsg.classList.remove('hide') // sucMsg 클래스 hide 제거
-   failMsg.classList.add('hide')// failMsg 클래스 hide 추가
-  }else{
-    sucMsg.classList.add('hide')// sucMsg 클래스 hide 추가
-    failMsg.classList.remove('hide')// failMsg 클래스 hide 제거\
-  }
-}
-
-
 //2-1 비밀번호 8자 이상
 function pw8Length(value) {
   return value.length >= 8
@@ -35,6 +23,17 @@ function pw8Length(value) {
 // 3. 함수의 매개변수로 들어오는 값이 4글자 이상인경우 true
 function id4Length(value) {
   return value.length >= 4
+}
+
+// 2. 아이디 입력창에 키를 눌렀을때 조건문
+userId.onkeyup=function(){
+  if(id4Length(userId.value)){//
+    sucMsg.classList.remove('hide') // sucMsg 클래스 hide 제거
+   failMsg.classList.add('hide')// failMsg 클래스 hide 추가
+  }else{
+    sucMsg.classList.add('hide')// sucMsg 클래스 hide 추가
+    failMsg.classList.remove('hide')// failMsg 클래스 hide 제거
+  }
 }
 
 // 4.  비밀번호1 , 비밀번호2 값을 받아 같으면 true
@@ -79,18 +78,26 @@ userId.onkeyup = function () {
 
 //버튼 이동
 function check() {
-  var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?]/gi
   let name =  document.querySelector('#name'); //이름
   let ownNum = document.querySelector('#ownNum') //사업자등록번호
   let userId = document.querySelector('#userId') //아이디
 
-  if(name.value==""||ownNum==""||id4Length(userId.value)==false||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false){
+  var special_pattern = /[`~!@#$%^&*|\\\'\";:\/?]/gi;
+
+  if(name.value==""||ownNum==""||isMatch(userPw.value,pwTest.value)==false||pw8Length(userPw.value)==false){
     alert("필수란을 채워주세요.")
+  }else if(id4Length(userId.value)==false) {
+    alert("아이디는 4자 이상 이어야 합니다.")
+  }
+  else if(special_pattern.test(userId.value)) {
+    alert("아이디에 특수문자는 포함되지 않습니다.")
   }
   else{
     window.location.href = 'http://127.0.0.1:5502/signup2.html'
   }
 }
+
+// 서버 연결되면 아이디 중복 체크
 
 //회원가입 승인
 function signup(){
