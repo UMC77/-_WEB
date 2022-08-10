@@ -161,7 +161,6 @@ a:active {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  margin-top: 5px;
 }
 
 /* 버튼 */
@@ -170,7 +169,7 @@ a:active {
     width: 30px;
     height: 20px;
     margin-left: 90px;
-    top:8px;
+    top:17px;
 }
 
 .center-middle .a3 .xx {
@@ -188,7 +187,7 @@ a:active {
   border-radius: 3px;
   box-sizing: border-box;
   padding-left: 40px;
-  bottom: 30px;
+  bottom: 20px;
   z-index: -1;
 }
 
@@ -196,7 +195,7 @@ a:active {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
-  padding-top: 55px;
+  padding-top: 65px;
   position: absolute;
 }
 
@@ -216,7 +215,7 @@ a:active {
   box-sizing: border-box;
   padding-left: 10px;
   position: relative;
-  bottom:8px;
+  /* bottom:8px; */
 }
 
 
@@ -250,7 +249,7 @@ a:active {
   display: inline-block;
   height: 55px;
   width: 100%;
-  margin-top: 17px;
+  margin-top: 90px;
 }
 
 .center-middle .a5 > a {

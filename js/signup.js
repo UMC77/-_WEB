@@ -111,7 +111,7 @@ function signup(){
   const bBtn= document.querySelector('#사이트Agree')
   const cBtn= document.querySelector('#개인정보Agree')
 
-  if(storeName.value==""||storeNum.value==""||address.value==""||detailAddress.value==""||aBtn.checked==false||bBtn.checked==false||cBtn.checked==false){
+  if(storeName.value==""||storeNum.value==""|aBtn.checked==false||bBtn.checked==false||cBtn.checked==false){
     alert("필수란을 채워주세요.")
   }
   else{
