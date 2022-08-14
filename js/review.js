@@ -1,7 +1,7 @@
 window.onload=function(){
     function onClick(){
         document.querySelector('.modal_wrap_review').style.display='block';
-        document.querySelector('.black_bg').style.display='block';
+        // document.querySelector('.black_bg').style.display='block';
     }
     function offClick(){
         document.querySelector('.modal_wrap_review').style.display='none';
@@ -29,4 +29,24 @@ window.onload=function(){
     // 메뉴관리
     function goMenu(){
         window.location.href = 'http://127.0.0.1:5502/handleMenu.html'
+    }
+
+    // 댓글기능
+
+    const $reviewcommentForm =document.querySelector("#ReviewcommentInputContainer");
+    const $backInput =document.querySelector(".back_input");
+
+    const commentItemTemplate = (newComment) => {
+        return ``;
+       }
+
+    $reviewcommentForm.addEventListener("submit", handleSubmit);
+
+    function handleSubmit(event){
+        event.preventDefault();
+        const newComment = backInput.value;
+
+        const newCommentItem = commentItemTemplate(newComment);
+
+        $commentList
     }

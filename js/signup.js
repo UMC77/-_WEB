@@ -8,7 +8,7 @@ let pwMsg = document.querySelector('.pw-success-message')
 let NpwMsg = document.querySelector('.pw-failure-message')
 const userPw =  document.querySelector('#userPw'); //비밀번호
 const pwTest = document.querySelector('#pwTest'); //비밀번호 확인
-let name =  document.querySelector('#name'); //이름
+let ownName =  document.querySelector('#name'); //이름
 const phoneNum = document.querySelector('#phoneNum'); //휴대폰번호
 const Nextbtn=document.querySelector('#btn_next')
 let chaMsg= document.querySelector('.cha-message')
@@ -115,7 +115,26 @@ function signup(){
     alert("필수란을 채워주세요.")
   }
   else{
-    window.location.href = 'http://127.0.0.1:5502/handleReserve.html'
+    //첫번째 회원가입 화면 api
+    fetch('http://api.google.com/user', {
+      method: 'post',
+      body: JSON.stringify({
+        store_num: ownNum,
+        ceo_id: userId,
+        ceo_pwd: userPw,
+        ceo_phone: phoneNum,
+        ceo_name: ownName,
+      })
+    }) 
+    .then( res => res.json())
+    .then( res => {
+      if (res.success) {
+        alert("저장완료");
+        window.location.href = 'http://127.0.0.1:5502/handleReserve.html'
+      }
+      elseP
+      alert("실패");
+    })
   }
 }
 
