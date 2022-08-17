@@ -93,7 +93,26 @@ function check() {
     alert("아이디에 특수문자는 포함되지 않습니다.")
   }
   else{
-    window.location.href = 'http://127.0.0.1:5502/signup2.html'
+    //첫번째 회원가입 화면 api
+    fetch('http://nibbangnaebbang.shop/ceo/signupceo', {
+      method: 'post',
+      body: JSON.stringify({
+        store_num: ownNum,
+        ceo_id: userId,
+        ceo_pwd: userPw,
+        ceo_phone: phoneNum,
+        ceo_name: ownName,
+      })
+    }) 
+    .then( res => res.json())
+    .then( res => {
+      if (res.success) {
+        alert("저장완료");
+        window.location.href = 'http://127.0.0.1:5502/signup2.html'
+      }
+      elseP
+      alert("실패");
+    })
   }
 }
 
@@ -115,26 +134,7 @@ function signup(){
     alert("필수란을 채워주세요.")
   }
   else{
-    //첫번째 회원가입 화면 api
-    fetch('http://api.google.com/user', {
-      method: 'post',
-      body: JSON.stringify({
-        store_num: ownNum,
-        ceo_id: userId,
-        ceo_pwd: userPw,
-        ceo_phone: phoneNum,
-        ceo_name: ownName,
-      })
-    }) 
-    .then( res => res.json())
-    .then( res => {
-      if (res.success) {
-        alert("저장완료");
         window.location.href = 'http://127.0.0.1:5502/handleReserve.html'
-      }
-      elseP
-      alert("실패");
-    })
   }
 }
 

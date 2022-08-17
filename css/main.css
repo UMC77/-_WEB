@@ -160,16 +160,8 @@ ul.nav.clearfix {
 
 /* 배너 */
 
-.own-main .own-mid {
-    display: inline-block;
-    width: 438px;
-    height: 294px;
-    margin-top: 38px;
-    background-color: #7588EA;
-    border: 1px solid #6B6C9C;
-    box-sizing: border-box;
-    padding-left: 42.49px;
-    padding-top: 22.87px;
+.own-mid {
+    margin-top: 54px;
 }
 
 .mid-text>p {
@@ -241,7 +233,7 @@ ul.nav.clearfix {
     width: 400px;
     color: #646464;
     font-size: 12px;
-    margin-top: 39px;
+    margin-top: 49px;
     margin-left: 36.79px;
 }
 
@@ -352,13 +344,15 @@ ul.nav.clearfix {
 
 .own-bottom {
     width: 100%;
-    height: 170px;
-    background: #EEEEEE;
+    height: 180px;
+    background: #EEEEEE; 
+    text-align: center;
 }
 
 .bottom-menu {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    position: relative;   
+    bottom: 100px;
 }
 
 .bottom-menu>span{
@@ -384,6 +378,8 @@ ul.nav.clearfix {
 .bottom-text {
     display: flex;
     justify-content: center;
+    position: relative;   
+    bottom: 100px;
 }
 
 .bottom-text>span {
@@ -395,6 +391,10 @@ ul.nav.clearfix {
     color: #949494;
     padding-left: 14px;
     padding-top: 28px;
+}
+.bottom-text2 {
+    position: relative;   
+    bottom: 100px;
 }
 
 .bottom-text2>p {
