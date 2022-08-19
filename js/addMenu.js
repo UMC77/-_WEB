@@ -1,8 +1,10 @@
+// 사진 업로드할때 input에 사진 이름 뜨도록
 $("#file_input").on("change", function () {
   var fileName = $("#file_input").val();
   $(".upload-name").val(fileName);
 });
 
+//재료 정보 메뉴 추가
 function addIngrement() {
   let addArea = document.getElementById("add_ingre");
   let new_ingre_tr = document.createElement("tr");
@@ -13,6 +15,8 @@ function addIngrement() {
   new_ingre_input.placeholder = "재료명을 정확히 입력해주세요";
   new_ingre_td.appendChild(new_ingre_input);
 }
+
+//카테고리 추가
 
 function addCategory() {
   let addArea = document.getElementById("addCate");
@@ -63,6 +67,7 @@ function addCategory() {
   new_a.appendChild(new_span_menu);
 }
 
+//메뉴 삭제
 function deleteMenu() {
   const delete_menu = document.getElementById("menu_list");
   delete_menu.remove();
@@ -121,6 +126,7 @@ window.onload = function () {
   document.getElementById("saveBtn").addEventListener("click", addMenu);
 };
 
+// 메뉴 추가 안 버튼 색 변경
 var sellBtn = document.querySelector("#onsell");
 
 function handleSellBtn() {
