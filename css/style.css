@@ -13,3 +13,65 @@
   font-family: "Noto Sans";
   font-style: normal;
 }
+
+.header-nav {
+  padding: 30px 40px;
+}
+.own-bottom-nav {
+  width: 100%;
+  height: 180px;
+  background: #ffffff;
+}
+
+.bottom-nav-menu {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav-menu > span {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+  padding-left: 42px;
+  padding-top: 36px;
+}
+
+.bottom-nav-menu > span:nth-child(4) {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.bottom-nav-text {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-nav-text > span {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #949494;
+  padding-left: 14px;
+  padding-top: 28px;
+}
+
+.bottom-nav-text2 > p {
+  display: flex;
+  justify-content: center;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: #949494;
+  padding-top: 11px;
+}
